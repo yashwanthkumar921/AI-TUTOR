@@ -1,0 +1,2662 @@
+[
+    {
+        "title": "Introduction to Python",
+        "overview": "This lesson provides a foundational understanding of Python programming, covering basic syntax, data types, and control flow.  We will explore the interactive interpreter and write simple programs.",
+        "sections": [
+            {
+                "title": "What is Python?",
+                "content": "Python is a high-level, general-purpose programming language known for its readability and versatility.  It's used in web development, data science, machine learning, and more.",
+                "key_concepts": [
+                    "Interpreted Language",
+                    "High-level Language",
+                    "Dynamically Typed"
+                ]
+            },
+            {
+                "title": "Setting up your environment",
+                "content": "Instructions on installing Python and a suitable IDE (e.g., VS Code, PyCharm).",
+                "key_concepts": [
+                    "Python Installation",
+                    "IDE Setup"
+                ]
+            },
+            {
+                "title": "Basic Syntax and Data Types",
+                "content": "Covers variables, operators, data types (integers, floats, strings, booleans), and basic input/output.",
+                "example_code": "name = \"Alice\"\nage = 30\nprint(f\"My name is {name} and I am {age} years old.\")",
+                "explanation": "This code demonstrates variable assignment and string formatting using f-strings.  It prints a personalized message to the console."
+            },
+            {
+                "title": "Control Flow",
+                "content": "Explains conditional statements (if, elif, else) and loops (for, while).",
+                "example_code": "for i in range(5):\n    print(i)\n\nx = 0\nwhile x < 5:\n    print(x)\n    x += 1",
+                "explanation": "The first example uses a for loop to iterate through numbers 0-4. The second example uses a while loop to achieve the same result."
+            },
+            {
+                "title": "Data Structures",
+                "content": "Introduces lists and tuples as basic data structures.",
+                "example_code": "my_list = [1, 2, 3, 4, 5]\nmy_tuple = (1, 2, 3, 4, 5)",
+                "explanation": "Lists are mutable (changeable) while tuples are immutable (unchangeable)."
+            }
+        ],
+        "exercises": [
+            {
+                "description": "Write a program to calculate the area of a rectangle.",
+                "solution": ""
+            },
+            {
+                "description": "Write a program to check if a number is even or odd.",
+                "solution": ""
+            }
+        ],
+        "quiz": [
+            {
+                "question": "What is Python?",
+                "answer": "A high-level, general-purpose programming language."
+            },
+            {
+                "question": "Is Python compiled or interpreted?",
+                "answer": "Interpreted"
+            }
+        ]
+    },
+    {
+        "title": "Variables and Data Types",
+        "overview": "This lesson introduces the fundamental concepts of variables and data types in programming.  We'll learn how to declare variables, assign values to them, and understand the different types of data that can be stored.",
+        "key_concepts": [
+            {
+                "concept": "Variables",
+                "description": "Named storage locations in a computer's memory used to hold data.  They allow us to store and manipulate information efficiently.",
+                "examples": [
+                    "my_age = 30",
+                    "student_name = \"Alice\"",
+                    "price = 99.99"
+                ]
+            },
+            {
+                "concept": "Data Types",
+                "description": "Categorization of data based on its characteristics and how it's processed. Common data types include integers, floating-point numbers, strings, booleans, etc.",
+                "examples": [
+                    {
+                        "type": "Integer (int)",
+                        "description": "Whole numbers (e.g., 10, -5, 0)",
+                        "example": "age = 25"
+                    },
+                    {
+                        "type": "Floating-Point Number (float)",
+                        "description": "Numbers with decimal points (e.g., 3.14, -2.5)",
+                        "example": "pi = 3.14159"
+                    },
+                    {
+                        "type": "String (str)",
+                        "description": "Sequences of characters (text) enclosed in quotes (e.g., \"Hello\", 'Python')",
+                        "example": "message = \"Hello, world!\""
+                    },
+                    {
+                        "type": "Boolean (bool)",
+                        "description": "Represents truth values: True or False",
+                        "example": "is_valid = True"
+                    }
+                ]
+            },
+            {
+                "concept": "Variable Assignment",
+                "description": "The process of giving a value to a variable using the assignment operator (=).",
+                "examples": [
+                    "x = 10",
+                    "name = \"Bob\"",
+                    "is_active = False"
+                ]
+            }
+        ],
+        "example_code": {
+            "language": "Python",
+            "code": "name = \"John Doe\"\nage = 30\nheight = 5.8\nis_student = True\nprint(name)\nprint(age)\nprint(height)\nprint(is_student)"
+        },
+        "explanation": "This Python code demonstrates variable declaration and assignment.  It creates variables to store a person's name (string), age (integer), height (floating-point number), and student status (boolean).  The `print()` function displays the values of these variables.",
+        "quiz": [
+            {
+                "question": "What is a variable?",
+                "answer": "A named storage location in memory that holds data."
+            },
+            {
+                "question": "What is the difference between an integer and a float?",
+                "answer": "An integer is a whole number, while a float is a number with a decimal point."
+            }
+        ]
+    },
+    {
+        "title": "Loops in Programming",
+        "overview": "Loops are fundamental programming constructs that allow you to repeat a block of code multiple times.  This lesson covers different types of loops and how to use them effectively.",
+        "key_concepts": [
+            "Iteration: Repeating a process multiple times.",
+            "Loop variables: Variables used to control the number of iterations.",
+            "Loop termination conditions: How loops stop executing.",
+            "For loops: Iterating over a sequence (list, string, range).",
+            "While loops: Repeating a block of code as long as a condition is true.",
+            "Nested loops: Loops within other loops.",
+            "Loop control statements (break and continue): Modifying loop execution flow."
+        ],
+        "example_code": {
+            "python": [
+                {
+                    "type": "for_loop",
+                    "code": "for i in range(5):\n  print(i)",
+                    "explanation": "This for loop iterates 5 times, printing the numbers 0 through 4.  `range(5)` generates a sequence of numbers from 0 up to (but not including) 5."
+                },
+                {
+                    "type": "while_loop",
+                    "code": "count = 0\nwhile count < 5:\n  print(count)\n  count += 1",
+                    "explanation": "This while loop also iterates 5 times. It continues as long as `count` is less than 5, printing the value of `count` in each iteration and incrementing it."
+                },
+                {
+                    "type": "nested_loop",
+                    "code": "for i in range(3):\n  for j in range(2):\n    print(f\"({i}, {j})\")",
+                    "explanation": "This example demonstrates nested loops. The outer loop iterates three times, and for each iteration, the inner loop iterates twice, producing all combinations of (i, j) where 0 <= i < 3 and 0 <= j < 2."
+                }
+            ],
+            "javascript": [
+                {
+                    "type": "for_loop",
+                    "code": "for (let i = 0; i < 5; i++) {\n  console.log(i);\n}",
+                    "explanation": "Similar to the Python for loop, this iterates 5 times, printing 0 through 4."
+                }
+            ]
+        },
+        "exercises": [
+            {
+                "description": "Write a loop to print even numbers from 0 to 20.",
+                "solution_hint": "Use a for loop and the modulo operator (%)"
+            },
+            {
+                "description": "Write a loop that calculates the sum of numbers from 1 to 100.",
+                "solution_hint": "Use a for loop and a variable to accumulate the sum."
+            }
+        ],
+        "further_reading": [
+            {
+                "title": "Python Loops Documentation",
+                "url": "https://docs.python.org/3/tutorial/controlflow.html#for-statements"
+            },
+            {
+                "title": "JavaScript Loops Documentation",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration"
+            }
+        ]
+    },
+    {
+        "title": "Functions in Programming",
+        "overview": "Functions are reusable blocks of code that perform specific tasks. They improve code organization, readability, and reusability by breaking down complex programs into smaller, manageable parts.  This lesson covers function definition, parameters, return values, and scope.",
+        "key_concepts": [
+            "Defining Functions: Using `def` (Python) or similar keywords in other languages.",
+            "Function Parameters and Arguments: Passing data into functions.",
+            "Return Values:  How functions send data back to the calling code.",
+            "Function Scope: Understanding variable accessibility within and outside functions.",
+            "Function Calls: How to execute a function.",
+            "Docstrings:  Adding documentation to functions."
+        ],
+        "example_code": {
+            "language": "Python",
+            "code": "def greet(name, greeting='Hello'):\n  \"\"\"Greets the person passed in as a parameter.\"\"\"\n  print(f\"{greeting}, {name}!\")\n\ngreet(\"Alice\")\ngreet(\"Bob\", \"Good morning\")",
+            "output": "Hello, Alice!\nGood morning, Bob!"
+        },
+        "explanation": {
+            "sections": [
+                {
+                    "heading": "Function Definition",
+                    "content": "The `def` keyword defines a function.  `greet` is the function name, `name` and `greeting` are parameters. `greeting` has a default value of 'Hello'."
+                },
+                {
+                    "heading": "Function Parameters",
+                    "content": "Parameters are variables listed within the parentheses of the function definition.  Arguments are the values passed to the function when it's called."
+                },
+                {
+                    "heading": "Function Call",
+                    "content": "The function is called by using its name followed by parentheses containing the arguments."
+                },
+                {
+                    "heading": "Return Values",
+                    "content": "This example uses `print` to display output.  Functions can also use a `return` statement to send a value back to the caller."
+                },
+                {
+                    "heading": "Docstrings",
+                    "content": "The triple-quoted string inside the function is a docstring. It provides a brief description of the function's purpose."
+                }
+            ]
+        },
+        "exercises": [
+            {
+                "description": "Write a function to calculate the area of a rectangle.",
+                "solution": "def rectangle_area(length, width):\n  return length * width"
+            },
+            {
+                "description": "Write a function to check if a number is even.",
+                "solution": "def is_even(number):\n  return number % 2 == 0"
+            }
+        ]
+    },
+    {
+        "title": "Introduction to Python",
+        "overview": "This lesson provides a foundational understanding of Python programming, covering basic syntax, data types, and control flow.  We'll explore how to write simple programs and understand fundamental programming concepts.",
+        "key_concepts": [
+            "Variables and Data Types (Integers, Floats, Strings, Booleans)",
+            "Operators (Arithmetic, Comparison, Logical)",
+            "Basic Input and Output (using `print()` and `input()`)",
+            "Control Flow (Conditional Statements: `if`, `elif`, `else`; Loops: `for`, `while`)",
+            "Data Structures (Lists, Tuples)",
+            "Functions"
+        ],
+        "modules": [
+            {
+                "title": "Setting up your Python Environment",
+                "content": "Instructions on installing Python and a suitable IDE (e.g., VS Code, PyCharm)."
+            },
+            {
+                "title": "Hello, World!",
+                "content": "Writing your first Python program: printing 'Hello, World!' to the console.",
+                "code": "print('Hello, World!')"
+            },
+            {
+                "title": "Variables and Data Types",
+                "content": "Explanation of different data types and how to declare variables.",
+                "code": "name = \"Alice\"\nage = 30\nheight = 5.8\nis_student = True"
+            },
+            {
+                "title": "Operators",
+                "content": "Examples of arithmetic, comparison, and logical operators.",
+                "code": "x = 10\ny = 5\nprint(x + y) # Addition\nprint(x > y) # Comparison"
+            },
+            {
+                "title": "Input and Output",
+                "content": "Using `input()` to get user input and `print()` to display output.",
+                "code": "name = input(\"Enter your name: \")\nprint(\"Hello, \" + name + \"!\")"
+            },
+            {
+                "title": "Control Flow",
+                "content": "Examples of `if`, `elif`, `else` statements and `for`, `while` loops.",
+                "code": "x = 10\nif x > 5:\n  print(\"x is greater than 5\")\nelse:\n  print(\"x is not greater than 5\")\n\nfor i in range(5):\n  print(i)"
+            },
+            {
+                "title": "Lists and Tuples",
+                "content": "Introduction to lists and tuples as fundamental data structures.",
+                "code": "my_list = [1, 2, 3, 4, 5]\nmy_tuple = (10, 20, 30)"
+            },
+            {
+                "title": "Functions",
+                "content": "Defining and using functions to organize code.",
+                "code": "def greet(name):\n  print(\"Hello, \" + name + \"!\")\ngreet(\"Bob\")"
+            }
+        ],
+        "exercises": [
+            {
+                "description": "Write a program to calculate the area of a rectangle.",
+                "solution": "width = float(input(\"Enter width: \"))\nheight = float(input(\"Enter height: \"))\narea = width * height\nprint(\"Area:\", area)"
+            },
+            {
+                "description": "Write a program to check if a number is even or odd.",
+                "solution": "number = int(input(\"Enter a number: \"))\nif number % 2 == 0:\n  print(\"Even\")\nelse:\n  print(\"Odd\")"
+            }
+        ],
+        "further_reading": [
+            "https://www.python.org/",
+            "https://docs.python.org/3/"
+        ]
+    },
+    {
+        "title": "Variables and Data Types",
+        "overview": "This lesson introduces the fundamental concepts of variables and data types in programming.  We will learn how to declare variables, assign values to them, and understand the different types of data that can be stored.",
+        "learning_objectives": [
+            "Define what a variable is and its purpose.",
+            "Identify and explain common data types (integer, float, string, boolean).",
+            "Declare and initialize variables in at least one programming language.",
+            "Understand type conversion (casting) and its implications.",
+            "Write simple programs that use variables of different data types."
+        ],
+        "sections": [
+            {
+                "title": "What is a Variable?",
+                "content": "A variable is a named storage location in a computer's memory that holds a value.  Think of it like a container that can store different types of information.",
+                "example_code": "Python: my_variable = 10"
+            },
+            {
+                "title": "Common Data Types",
+                "content": "Different types of data require different ways of storage and manipulation. Common data types include:",
+                "sub_sections": [
+                    {
+                        "type": "Integer (int)",
+                        "description": "Whole numbers (e.g., 10, -5, 0)",
+                        "example": "Python: age = 30"
+                    },
+                    {
+                        "type": "Floating-Point Number (float)",
+                        "description": "Numbers with decimal points (e.g., 3.14, -2.5)",
+                        "example": "Python: price = 99.99"
+                    },
+                    {
+                        "type": "String (str)",
+                        "description": "Text enclosed in quotes (e.g., \"Hello\", 'Python')",
+                        "example": "Python: name = \"Alice\""
+                    },
+                    {
+                        "type": "Boolean (bool)",
+                        "description": "Represents truth values (True or False)",
+                        "example": "Python: is_active = True"
+                    }
+                ]
+            },
+            {
+                "title": "Type Conversion (Casting)",
+                "content": "Sometimes you need to change a variable from one data type to another. This is called type conversion or casting.",
+                "example_code": "Python: \n num_str = \"10\"\n num_int = int(num_str) # Convert string to integer"
+            },
+            {
+                "title": "Practice Exercises",
+                "content": [
+                    "Declare variables of different data types and print their values.",
+                    "Perform type conversion between different data types.",
+                    "Write a program that takes user input and stores it in variables."
+                ]
+            }
+        ],
+        "quiz": {
+            "questions": [
+                {
+                    "question": "What is a variable in programming?",
+                    "options": [
+                        "A fixed value that cannot be changed",
+                        "A named storage location for data",
+                        "A type of data structure",
+                        "A programming language"
+                    ],
+                    "answer": "A named storage location for data"
+                }
+            ]
+        }
+    },
+    {
+        "title": "Introduction to Conditionals",
+        "overview": "This lesson introduces conditional statements, which allow your program to make decisions based on different conditions.  We'll cover `if`, `elif`, and `else` statements, along with boolean logic.",
+        "learning_objectives": [
+            "Understand the purpose of conditional statements.",
+            "Write `if`, `elif`, and `else` statements in Python.",
+            "Use boolean operators (and, or, not) effectively.",
+            "Debug common errors related to conditional logic."
+        ],
+        "sections": [
+            {
+                "title": "If Statements",
+                "content": "An `if` statement executes a block of code only if a specified condition is true.  The syntax is: `if condition: code_to_execute`",
+                "example_code": "if x > 5:\n  print('x is greater than 5')",
+                "explanation": "This code will print 'x is greater than 5' only if the variable `x` holds a value greater than 5."
+            },
+            {
+                "title": "If-Else Statements",
+                "content": "An `if-else` statement provides an alternative block of code to execute if the condition in the `if` statement is false. Syntax: `if condition: code_if_true else: code_if_false`",
+                "example_code": "if x > 5:\n  print('x is greater than 5')\nelse:\n  print('x is not greater than 5')",
+                "explanation": "This code will print 'x is greater than 5' if `x` is greater than 5, otherwise it prints 'x is not greater than 5'."
+            },
+            {
+                "title": "If-Elif-Else Statements",
+                "content": "An `if-elif-else` statement allows for multiple conditions to be checked sequentially.  The first condition that evaluates to true will have its associated code block executed.  The `else` block (optional) executes if none of the preceding conditions are true.",
+                "example_code": "if x > 10:\n  print('x is greater than 10')\nelif x > 5:\n  print('x is greater than 5')\nelse:\n  print('x is less than or equal to 5')",
+                "explanation": "This code checks if `x` is greater than 10. If not, it checks if `x` is greater than 5. If neither is true, it executes the `else` block."
+            },
+            {
+                "title": "Boolean Operators",
+                "content": "Boolean operators (`and`, `or`, `not`) combine or modify boolean expressions.",
+                "example_code": "if x > 5 and y < 10:\n  print('Both conditions are true')",
+                "explanation": "This code only prints the message if both `x > 5` and `y < 10` are true."
+            }
+        ],
+        "quiz": [
+            {
+                "question": "What is the purpose of an `if` statement?",
+                "answer": "To execute a block of code only if a condition is true."
+            },
+            {
+                "question": "What is the difference between `if-else` and `if-elif-else`?",
+                "answer": "`if-else` handles two possibilities, while `if-elif-else` handles multiple possibilities sequentially."
+            }
+        ],
+        "keywords": [
+            "if",
+            "elif",
+            "else",
+            "conditional",
+            "boolean",
+            "and",
+            "or",
+            "not"
+        ]
+    },
+    {
+        "title": "Loops in Programming",
+        "overview": "Loops are fundamental programming constructs that allow you to execute a block of code repeatedly.  This lesson covers the basic types of loops and how to use them effectively.",
+        "key_concepts": [
+            "Iteration: Repeating a set of instructions.",
+            "Loop control variables: Variables that manage the loop's execution.",
+            "Loop conditions:  Expressions that determine when the loop terminates.",
+            "For loops: Used for iterating over a sequence (list, tuple, string, etc.) or a range of numbers.",
+            "While loops: Used for repeating a block of code as long as a condition is true.",
+            "Nested loops: Loops within loops.",
+            "Breaking out of loops: Using `break` statements to prematurely exit a loop.",
+            "Continuing loops: Using `continue` statements to skip to the next iteration."
+        ],
+        "example_code": {
+            "python": [
+                {
+                    "type": "for loop",
+                    "code": "for i in range(5):\n  print(i)",
+                    "explanation": "This for loop iterates 5 times, printing the numbers 0 through 4.  `range(5)` generates a sequence of numbers from 0 up to (but not including) 5."
+                },
+                {
+                    "type": "while loop",
+                    "code": "count = 0\nwhile count < 5:\n  print(count)\n  count += 1",
+                    "explanation": "This while loop continues as long as `count` is less than 5.  It prints the numbers 0 through 4. The `count += 1` line is crucial to avoid an infinite loop."
+                },
+                {
+                    "type": "nested loop",
+                    "code": "for i in range(3):\n  for j in range(2):\n    print(f\"({i}, {j})\")",
+                    "explanation": "This nested loop prints all combinations of (i, j) where i ranges from 0 to 2 and j ranges from 0 to 1."
+                }
+            ],
+            "javascript": [
+                {
+                    "type": "for loop",
+                    "code": "for (let i = 0; i < 5; i++) {\n  console.log(i);\n}",
+                    "explanation": "Similar to the Python example, this iterates 5 times, printing 0-4."
+                },
+                {
+                    "type": "while loop",
+                    "code": "let count = 0;\nwhile (count < 5) {\n  console.log(count);\n  count++;\n}",
+                    "explanation": "This mirrors the Python while loop example."
+                }
+            ]
+        },
+        "exercises": [
+            {
+                "description": "Write a program to print the even numbers from 0 to 20 using a for loop.",
+                "solution": "Python: `for i in range(0, 21, 2): print(i)`"
+            },
+            {
+                "description": "Write a program to calculate the factorial of a number using a while loop.",
+                "solution": "Python: `num = 5; factorial = 1; while num > 0: factorial *= num; num -= 1; print(factorial)`"
+            }
+        ],
+        "further_reading": [
+            "https://www.example.com/forloops",
+            "https://www.example.com/whileloops"
+        ]
+    },
+    {
+        "title": "Functions: Building Blocks of Code",
+        "overview": "Functions are reusable blocks of code that perform specific tasks. They improve code organization, readability, and reusability by breaking down complex problems into smaller, manageable parts.  This lesson will cover defining, calling, and utilizing functions effectively.",
+        "key_concepts": [
+            {
+                "concept": "Defining Functions",
+                "description": "Learn how to structure a function using keywords like 'def' (in Python) or similar equivalents in other languages.  Understand parameters, arguments, and return values."
+            },
+            {
+                "concept": "Function Arguments and Parameters",
+                "description": "Differentiate between parameters (defined in the function definition) and arguments (values passed when calling the function). Explore positional and keyword arguments."
+            },
+            {
+                "concept": "Return Values",
+                "description": "Understand how functions can return values to the calling code.  Learn to use the 'return' statement effectively."
+            },
+            {
+                "concept": "Scope and Lifetime of Variables",
+                "description": "Grasp the concepts of local and global variables within the context of functions.  Understand how variable scope affects access and modification."
+            },
+            {
+                "concept": "Recursion",
+                "description": "(Optional) Introduction to recursive functions, where a function calls itself to solve a problem."
+            }
+        ],
+        "example_code": {
+            "language": "Python",
+            "code": "def greet(name, greeting=\"Hello\"):\n  return f\"{greeting}, {name}!\"\n\nprint(greet(\"Alice\"))  # Output: Hello, Alice!\nprint(greet(\"Bob\", \"Good morning\"))  # Output: Good morning, Bob!",
+            "explanation": "This Python code defines a function 'greet' that takes a name and an optional greeting.  It returns a personalized greeting string. The example shows how to call the function with different arguments, including using the default greeting."
+        },
+        "exercises": [
+            {
+                "description": "Write a function to calculate the factorial of a number.",
+                "solution": ""
+            },
+            {
+                "description": "Create a function that checks if a number is prime.",
+                "solution": ""
+            }
+        ],
+        "further_reading": [
+            {
+                "title": "Python Function Documentation",
+                "url": "https://docs.python.org/3/tutorial/controlflow.html#defining-functions"
+            }
+        ]
+    },
+    {
+        "title": "Introduction to Python",
+        "overview": "This lesson provides a foundational understanding of Python programming, covering basic syntax, data types, and control flow.  We will explore how to write simple programs and understand fundamental programming concepts.",
+        "modules": [
+            {
+                "title": "What is Python?",
+                "content": "Introduction to Python's history, features, and applications.  Discussion of its interpreted nature and ease of use.",
+                "exercises": [
+                    {
+                        "description": "List 5 applications of Python.",
+                        "solution": ""
+                    }
+                ]
+            },
+            {
+                "title": "Setting up your Python Environment",
+                "content": "Instructions on how to download and install Python, choose an IDE (e.g., VS Code, PyCharm), and run your first 'Hello, World!' program.",
+                "exercises": [
+                    {
+                        "description": "Install Python and run 'print(\"Hello, World!\")'",
+                        "solution": ""
+                    }
+                ]
+            },
+            {
+                "title": "Basic Syntax and Data Types",
+                "content": "Covers variables, data types (integers, floats, strings, booleans), operators (arithmetic, comparison, logical), and comments.",
+                "example_code": "name = \"Alice\"\nage = 30\nprint(f\"My name is {name} and I am {age} years old.\")",
+                "explanation": "This code demonstrates variable assignment and string formatting using f-strings.  The print function displays the output to the console.",
+                "exercises": [
+                    {
+                        "description": "Create variables for your name and age, and print a greeting message.",
+                        "solution": ""
+                    }
+                ]
+            },
+            {
+                "title": "Control Flow (if-else statements and loops)",
+                "content": "Explains conditional statements (if, elif, else) and loops (for and while) with examples.",
+                "example_code": "x = 10\nif x > 5:\n    print(\"x is greater than 5\")\nelse:\n    print(\"x is not greater than 5\")\n\nfor i in range(5):\n    print(i)",
+                "explanation": "This demonstrates an if-else statement and a for loop. The for loop iterates through numbers 0 to 4.",
+                "exercises": [
+                    {
+                        "description": "Write a program to check if a number is even or odd.",
+                        "solution": ""
+                    },
+                    {
+                        "description": "Write a program to print the numbers from 1 to 10 using a for loop.",
+                        "solution": ""
+                    }
+                ]
+            }
+        ],
+        "assessment": {
+            "type": "quiz",
+            "questions": [
+                {
+                    "question": "What is the primary data type for whole numbers in Python?",
+                    "answer": "integer"
+                },
+                {
+                    "question": "What keyword is used to define a loop that iterates a specific number of times?",
+                    "answer": "for"
+                }
+            ]
+        }
+    },
+    {
+        "title": "Variables and Data Types",
+        "overview": "This lesson introduces the fundamental concepts of variables and data types in programming.  We will learn how to declare, initialize, and use variables to store different kinds of data.",
+        "key_concepts": [
+            {
+                "concept": "Variables",
+                "description": "Named storage locations in memory used to hold data.  Variables allow us to store and manipulate data throughout a program.",
+                "subtopics": [
+                    "Variable declaration",
+                    "Variable assignment",
+                    "Variable naming conventions"
+                ]
+            },
+            {
+                "concept": "Data Types",
+                "description": "Categories that classify the type of data a variable can hold. Different data types have different properties and operations associated with them.",
+                "subtopics": [
+                    "Integers (int)",
+                    "Floating-point numbers (float)",
+                    "Strings (str)",
+                    "Booleans (bool)",
+                    "Lists",
+                    "Dictionaries"
+                ]
+            }
+        ],
+        "example_code": {
+            "language": "Python",
+            "code": [
+                "name = \"Alice\"",
+                "age = 30",
+                "height = 5.8",
+                "is_student = True",
+                "grades = [85, 92, 78]",
+                "address = {\"street\":\"123 Main St\",\"city\":\"Anytown\"}"
+            ]
+        },
+        "explanation": {
+            "paragraphs": [
+                "The example code demonstrates the declaration and assignment of variables with different data types.  'name' is a string, 'age' is an integer, 'height' is a float, 'is_student' is a boolean, 'grades' is a list, and 'address' is a dictionary.",
+                "Each line assigns a value to a variable.  The type of the value automatically determines the data type of the variable.  Python is dynamically-typed, meaning you don't explicitly declare the data type; the interpreter infers it.",
+                "This flexibility makes Python easy to learn, but understanding data types is crucial for writing efficient and correct code."
+            ]
+        },
+        "quiz": [
+            {
+                "question": "What is a variable?",
+                "answer": "A named storage location in memory used to hold data."
+            },
+            {
+                "question": "What are the main data types in Python?",
+                "answer": "Integers, floats, strings, booleans, lists, and dictionaries, amongst others."
+            }
+        ]
+    },
+    {
+        "title": "Understanding Conditional Statements",
+        "overview": "This lesson introduces conditional statements, which allow you to control the flow of your program based on whether certain conditions are true or false.  We'll cover `if`, `elif`, and `else` statements, and how to use them effectively to create dynamic and responsive programs.",
+        "key_concepts": [
+            "If statement: Executes a block of code only if a condition is true.",
+            "Elif statement: Allows you to check multiple conditions sequentially.",
+            "Else statement: Executes a block of code if none of the preceding conditions are true.",
+            "Boolean expressions:  Conditions are evaluated using boolean expressions (True/False).",
+            "Logical operators (and, or, not): Combining multiple conditions.",
+            "Comparison operators (==, !=, <, >, <=, >=): Comparing values."
+        ],
+        "example_code": [
+            {
+                "language": "Python",
+                "code": "age = 20\nif age >= 18:\n    print(\"You are an adult.\")\nelif age >= 13:\n    print(\"You are a teenager.\")\nelse:\n    print(\"You are a child.\")"
+            },
+            {
+                "language": "JavaScript",
+                "code": "let age = 20;\nif (age >= 18) {\n  console.log(\"You are an adult.\");\n} else if (age >= 13) {\n  console.log(\"You are a teenager.\");\n} else {\n  console.log(\"You are a child.\");\n}"
+            }
+        ],
+        "explanation": "The examples demonstrate the use of `if`, `elif`, and `else` statements.  The code first checks if the `age` is greater than or equal to 18. If true, it prints \"You are an adult.\" If false, it moves to the `elif` condition, checking if the age is greater than or equal to 13. If that's true, it prints \"You are a teenager.\" Otherwise, the `else` block executes, printing \"You are a child.\". This demonstrates how conditional statements allow for different actions based on varying conditions.",
+        "exercises": [
+            {
+                "description": "Write a program that checks if a number is even or odd.",
+                "solution": ""
+            },
+            {
+                "description": "Write a program that determines the grade of a student based on their score.",
+                "solution": ""
+            }
+        ]
+    },
+    {
+        "title": "Loops in Programming",
+        "overview": "Loops are fundamental programming constructs that allow you to repeatedly execute a block of code. This lesson covers the common types of loops and how to use them effectively.",
+        "key_concepts": [
+            "Iteration: Repeating a process multiple times.",
+            "Loop Control Variables: Variables used to manage the loop's execution (e.g., counters).",
+            "Loop Termination Conditions: Determining when the loop should stop.",
+            "Different Loop Types: `for` loops and `while` loops.",
+            "Nested Loops: Loops within loops.",
+            "Looping through Data Structures: Iterating over lists, arrays, dictionaries, etc.",
+            "Break and Continue Statements: Controlling the flow within a loop."
+        ],
+        "example_code": {
+            "python": [
+                {
+                    "type": "for loop",
+                    "code": "for i in range(5):\n  print(i)",
+                    "description": "A simple `for` loop that prints numbers 0 to 4."
+                },
+                {
+                    "type": "while loop",
+                    "code": "count = 0\nwhile count < 5:\n  print(count)\n  count += 1",
+                    "description": "A `while` loop that prints numbers 0 to 4."
+                },
+                {
+                    "type": "nested loop",
+                    "code": "for i in range(3):\n  for j in range(2):\n    print(f\"({i}, {j})\")",
+                    "description": "A nested loop that prints pairs of numbers."
+                },
+                {
+                    "type": "loop with break",
+                    "code": "for i in range(10):\n  if i == 5:\n    break\n  print(i)",
+                    "description": "A `for` loop that stops when `i` is 5."
+                },
+                {
+                    "type": "loop with continue",
+                    "code": "for i in range(5):\n  if i == 2:\n    continue\n  print(i)",
+                    "description": "A `for` loop that skips printing when `i` is 2."
+                }
+            ],
+            "javascript": [
+                {
+                    "type": "for loop",
+                    "code": "for (let i = 0; i < 5; i++) {\n  console.log(i);\n}",
+                    "description": "A simple `for` loop in Javascript."
+                }
+            ]
+        },
+        "explanation": {
+            "for_loop": "The `for` loop iterates a specific number of times, often using a counter variable.  It's ideal when you know how many times you need to loop.",
+            "while_loop": "The `while` loop continues as long as a condition is true.  It's useful when the number of iterations is not known in advance.",
+            "nested_loops": "Nested loops are loops inside other loops. They are powerful but can be complex.",
+            "break_statement": "The `break` statement immediately terminates the loop.",
+            "continue_statement": "The `continue` statement skips the rest of the current iteration and proceeds to the next iteration."
+        },
+        "quiz": [
+            {
+                "question": "What is the purpose of a loop in programming?",
+                "answer": "To repeatedly execute a block of code."
+            },
+            {
+                "question": "Name two types of loops.",
+                "answer": "`for` loop and `while` loop"
+            }
+        ]
+    },
+    {
+        "title": "Functions",
+        "overview": "Functions are reusable blocks of code that perform specific tasks. They help organize code, improve readability, and promote reusability.  This lesson covers defining, calling, and using functions effectively.",
+        "key_concepts": [
+            "Defining functions using `def` (Python) or similar keywords in other languages",
+            "Function parameters and arguments: passing data into functions",
+            "Return values:  functions returning results",
+            "Scope and lifetime of variables within functions",
+            "Function calls and the order of execution",
+            "Types of functions:  void functions (no return value), functions with return values",
+            "Docstrings: documenting functions for clarity"
+        ],
+        "example_code": {
+            "language": "Python",
+            "code": "def greet(name, greeting='Hello'):\n  \"\"\"Greets the person passed in as a parameter.\"\"\"\n  print(f'{greeting}, {name}!')\n\ngreet('Alice')\ngreet('Bob', 'Good morning')\nresult = greet('Charlie', 'Hi there') #greet function doesn't return a value, result will be None\nprint(result)",
+            "output": "Hello, Alice!\nGood morning, Bob!\nHi there, Charlie!\nNone"
+        },
+        "explanation": "The Python code demonstrates a function definition using `def`.  The `greet` function takes a `name` parameter and an optional `greeting` parameter with a default value. The function prints a greeting message.  The examples show how to call the function with different arguments and demonstrates that a function without an explicit return statement returns `None`.",
+        "exercises": [
+            {
+                "description": "Write a function to calculate the area of a rectangle.",
+                "solution": "def rectangle_area(length, width):\n  return length * width"
+            },
+            {
+                "description": "Write a function to check if a number is even or odd.",
+                "solution": "def is_even(number):\n  return number % 2 == 0"
+            }
+        ],
+        "further_reading": [
+            {
+                "title": "Python Function Documentation",
+                "url": "https://docs.python.org/3/tutorial/controlflow.html#defining-functions"
+            }
+        ]
+    },
+    {
+        "title": "Introduction to Python",
+        "overview": "This lesson provides a foundational understanding of Python programming, covering basic syntax, data types, and control flow.  We will explore the interactive interpreter and write simple programs.",
+        "modules": [
+            {
+                "title": "What is Python?",
+                "content": [
+                    "Python's history and philosophy.",
+                    "Why Python is popular (readability, versatility, large community).",
+                    "Setting up your Python environment (installation and IDEs)."
+                ],
+                "example_code": "",
+                "explanation": ""
+            },
+            {
+                "title": "Basic Syntax and Data Types",
+                "content": [
+                    "Variables and assignment.",
+                    "Integers, floats, strings, booleans.",
+                    "Basic arithmetic operations (+, -, *, /, //, %, **).",
+                    "Type conversion."
+                ],
+                "example_code": "name = \"Alice\"\nage = 30\nprint(f\"My name is {name} and I am {age} years old.\")\nprint(10 / 3)\nprint(10 // 3)\nprint(10 % 3)",
+                "explanation": "This code demonstrates variable assignment, string formatting, and different types of division (floating-point, integer, and modulo)."
+            },
+            {
+                "title": "Control Flow",
+                "content": [
+                    "Conditional statements (if, elif, else).",
+                    "Loops (for and while loops).",
+                    "Break and continue statements."
+                ],
+                "example_code": "for i in range(5):\n    print(i)\n\nx = 0\nwhile x < 5:\n    print(x)\n    x += 1",
+                "explanation": "This code shows examples of for and while loops.  The for loop iterates through a sequence, while the while loop continues as long as a condition is true."
+            },
+            {
+                "title": "Data Structures",
+                "content": [
+                    "Lists.",
+                    "Tuples.",
+                    "Dictionaries."
+                ],
+                "example_code": "my_list = [1, 2, 3, 4, 5]\nmy_tuple = (1, 2, 3)\nmy_dict = {\"name\": \"Bob\", \"age\": 25}",
+                "explanation": "This introduces basic data structures in Python: Lists (mutable ordered sequences), Tuples (immutable ordered sequences), and Dictionaries (key-value pairs)."
+            }
+        ],
+        "quiz": [
+            {
+                "question": "What is the output of `print(10 % 3)`?",
+                "options": [
+                    "1",
+                    "3",
+                    "0",
+                    "3.333"
+                ],
+                "answer": "1"
+            },
+            {
+                "question": "What data structure is used to store key-value pairs?",
+                "options": [
+                    "list",
+                    "tuple",
+                    "dictionary",
+                    "set"
+                ],
+                "answer": "dictionary"
+            }
+        ]
+    },
+    {
+        "title": "Variables and Data Types",
+        "overview": "This lesson introduces the fundamental concepts of variables and data types in programming.  We will learn how to declare, assign, and use variables to store different kinds of information.",
+        "sections": [
+            {
+                "heading": "What are Variables?",
+                "content": [
+                    "A variable is a named storage location in a computer's memory.",
+                    "Variables hold data that can be used and manipulated throughout a program.",
+                    "They are essential for storing and managing information efficiently."
+                ],
+                "example_code": "name = \"Alice\"\nage = 30",
+                "explanation": "In this example, 'name' and 'age' are variables.  'name' stores a string value (\"Alice\"), and 'age' stores an integer value (30)."
+            },
+            {
+                "heading": "Common Data Types",
+                "content": [
+                    "**Integers (int):** Whole numbers (e.g., 10, -5, 0)",
+                    "**Floating-point numbers (float):** Numbers with decimal points (e.g., 3.14, -2.5)",
+                    "**Strings (str):** Sequences of characters (e.g., \"Hello\", 'Python')",
+                    "**Booleans (bool):** Represent truth values (True or False)",
+                    "**Lists:** Ordered, mutable sequences of items (e.g., [1, 2, 3])"
+                ],
+                "example_code": "x = 10  # int\ny = 3.14 # float\nz = \"Hello\" # str\nb = True # bool\nmy_list = [1, 2, \"three\"] # list",
+                "explanation": "This code demonstrates different data types. Each variable is assigned a value of a specific type."
+            },
+            {
+                "heading": "Variable Declaration and Assignment",
+                "content": [
+                    "Most programming languages don't require explicit variable declaration (like in C++ or Java).",
+                    "In many languages (like Python), you assign a value to a variable to create it.",
+                    "The data type is inferred from the assigned value."
+                ],
+                "example_code": "my_variable = 5\nprint(type(my_variable)) # Output: <class 'int'>\nmy_variable = \"five\"\nprint(type(my_variable)) # Output: <class 'str'>",
+                "explanation": "The type of 'my_variable' changes dynamically based on the assigned value. Python is dynamically-typed."
+            },
+            {
+                "heading": "Type Conversion (Casting)",
+                "content": [
+                    "Sometimes, you need to convert a variable from one data type to another (casting).",
+                    "This is often necessary for operations that require specific data types."
+                ],
+                "example_code": "age_str = \"30\"\nage_int = int(age_str)\nprint(age_int + 5) # Output: 35",
+                "explanation": "The string \"30\" is converted to an integer using `int()` before the addition operation."
+            }
+        ],
+        "quiz": [
+            {
+                "question": "What is a variable?",
+                "answer": "A named storage location in memory."
+            },
+            {
+                "question": "What are three common data types?",
+                "answer": "Integers, floats, strings"
+            }
+        ]
+    },
+    {
+        "title": "Conditionals: Controlling the Flow of Your Program",
+        "overview": "This lesson introduces conditional statements, which allow your program to make decisions and execute different blocks of code based on whether certain conditions are true or false. We will cover `if`, `elif`, and `else` statements, and how to use them effectively to create dynamic and responsive programs.",
+        "learningObjectives": [
+            "Understand the purpose of conditional statements.",
+            "Use `if`, `elif`, and `else` statements correctly.",
+            "Write conditional statements that handle various scenarios.",
+            "Debug common errors in conditional statements."
+        ],
+        "content": [
+            {
+                "heading": "The `if` Statement",
+                "description": "The fundamental building block of conditional logic.  Executes a block of code only if a condition is true.",
+                "example": "if x > 5:\n  print('x is greater than 5')"
+            },
+            {
+                "heading": "The `if-else` Statement",
+                "description": "Allows you to specify different actions based on whether a condition is true or false.",
+                "example": "if x > 5:\n  print('x is greater than 5')\nelse:\n  print('x is not greater than 5')"
+            },
+            {
+                "heading": "The `if-elif-else` Statement",
+                "description": "Handles multiple conditions sequentially.  Executes the first block whose condition is true.",
+                "example": "if x > 5:\n  print('x is greater than 5')\nelif x == 5:\n  print('x is equal to 5')\nelse:\n  print('x is less than 5')"
+            },
+            {
+                "heading": "Nested Conditionals",
+                "description": "Placing conditional statements within other conditional statements.",
+                "example": "if x > 0:\n  if x < 10:\n    print('x is between 0 and 10')\n  else:\n    print('x is greater than 10')"
+            },
+            {
+                "heading": "Logical Operators",
+                "description": "Combine multiple conditions using `and`, `or`, and `not`.",
+                "example": "if x > 5 and y < 10:\n  print('Both conditions are true')"
+            }
+        ],
+        "example_code": [
+            {
+                "language": "Python",
+                "code": "age = 20\nif age >= 18:\n  print('You are an adult.')\nelse:\n  print('You are a minor.')"
+            },
+            {
+                "language": "JavaScript",
+                "code": "let age = 20;\nif (age >= 18) {\n  console.log('You are an adult.');\n} else {\n  console.log('You are a minor.');\n}"
+            }
+        ],
+        "explanation": "The examples demonstrate how to use `if`, `else`, and `elif` statements to control the flow of execution based on the value of the `age` variable.  The program prints a different message depending on whether the age is greater than or equal to 18.",
+        "quiz": [
+            {
+                "question": "What will be printed if x = 10 in the following code: \n if x > 5: \n   print('Greater than 5') \n elif x == 5: \n   print('Equal to 5') \n else: \n   print('Less than 5')",
+                "answer": "Greater than 5"
+            },
+            {
+                "question": "What is the purpose of the 'else' statement in a conditional structure?",
+                "answer": "To specify a block of code to execute if the preceding 'if' or 'elif' conditions are false."
+            }
+        ]
+    },
+    {
+        "title": "Loops in Programming",
+        "overview": "Loops are fundamental programming constructs that allow you to execute a block of code repeatedly.  This lesson covers the basic types of loops and how to use them effectively.",
+        "learningObjectives": [
+            "Understand the purpose of loops in programming.",
+            "Identify and differentiate between different types of loops (e.g., `for` and `while` loops).",
+            "Write code using loops to iterate over data structures.",
+            "Use loop control statements (e.g., `break` and `continue`).",
+            "Debug common loop-related errors."
+        ],
+        "content": [
+            {
+                "sectionTitle": "Introduction to Loops",
+                "subsections": [
+                    {
+                        "heading": "What are Loops?",
+                        "text": "Loops are used to automate repetitive tasks.  Instead of writing the same code multiple times, you can use a loop to execute it a specified number of times or until a certain condition is met."
+                    },
+                    {
+                        "heading": "Types of Loops",
+                        "text": "Common loop types include `for` loops (used for iterating over a sequence) and `while` loops (used for repeating a block of code as long as a condition is true)."
+                    }
+                ]
+            },
+            {
+                "sectionTitle": "For Loops",
+                "subsections": [
+                    {
+                        "heading": "Syntax and Usage",
+                        "text": "Example: `for i in range(10): print(i)`"
+                    },
+                    {
+                        "heading": "Iterating over Lists and other data structures",
+                        "text": "Example: `my_list = [1, 2, 3]; for item in my_list: print(item)`"
+                    }
+                ]
+            },
+            {
+                "sectionTitle": "While Loops",
+                "subsections": [
+                    {
+                        "heading": "Syntax and Usage",
+                        "text": "Example: `count = 0; while count < 5: print(count); count += 1`"
+                    },
+                    {
+                        "heading": "Infinite Loops and how to avoid them",
+                        "text": "Explanation of potential infinite loop scenarios and how to prevent them using proper conditionals."
+                    }
+                ]
+            },
+            {
+                "sectionTitle": "Loop Control Statements",
+                "subsections": [
+                    {
+                        "heading": "Break and Continue",
+                        "text": "Explanation of `break` (terminates the loop) and `continue` (skips the current iteration)."
+                    }
+                ]
+            }
+        ],
+        "exampleCode": {
+            "language": "python",
+            "code": [
+                "for i in range(5):",
+                "  print(i)",
+                "",
+                "count = 0",
+                "while count < 5:",
+                "  print(count)",
+                "  count += 1",
+                "",
+                "my_list = [10, 20, 30, 40, 50]",
+                "for item in my_list:",
+                "  if item == 30:",
+                "    break",
+                "  print(item)"
+            ]
+        },
+        "explanation": "The first example demonstrates a `for` loop iterating 5 times. The second demonstrates a `while` loop doing the same.  The third example shows how `break` can be used to exit a loop prematurely.",
+        "quiz": [
+            {
+                "question": "What is the purpose of a loop in programming?",
+                "answer": "To automate repetitive tasks."
+            },
+            {
+                "question": "Name two types of loops.",
+                "answer": "`for` and `while` loops"
+            }
+        ]
+    },
+    {
+        "title": "Functions: Reusable Blocks of Code",
+        "overview": "This lesson introduces functions, a fundamental concept in programming that allows you to organize and reuse code.  Functions break down complex tasks into smaller, manageable pieces, improving code readability, maintainability, and efficiency.",
+        "content": [
+            {
+                "concept": "Defining Functions",
+                "description": "Learn how to define functions using keywords like `def` (Python), `function` (JavaScript), etc. Understand the structure: function name, parameters, return values, and the function body.",
+                "example": "Python: `def greet(name):\n  print(f'Hello, {name}!')`"
+            },
+            {
+                "concept": "Function Parameters and Arguments",
+                "description": "Explore how to pass data into functions using parameters and arguments. Understand the difference between positional and keyword arguments, and how to handle default parameter values.",
+                "example": "Python: `def add(x, y=0):\n  return x + y`"
+            },
+            {
+                "concept": "Return Values",
+                "description": "Learn how functions return values using the `return` statement. Understand how to use return values in your code.",
+                "example": "Python: `def square(num):\n  return num * num`"
+            },
+            {
+                "concept": "Scope and Lifetime of Variables",
+                "description": "Understand the concept of variable scope (local vs. global) and how it affects variable access within functions.",
+                "example": "Python:  Illustrate local vs global variable examples."
+            },
+            {
+                "concept": "Function Calls",
+                "description": "Learn how to call and use functions in your code, passing arguments and receiving return values.",
+                "example": "Python: `result = square(5)  # Call the square function`\nJavaScript: `let result = square(5);`"
+            },
+            {
+                "concept": "Recursion (Optional)",
+                "description": "Introduce the concept of recursive functions, where a function calls itself.  This is an advanced topic and may be omitted for beginners.",
+                "example": "Python: `def factorial(n):\n  if n == 0:\n    return 1\n  else:\n    return n * factorial(n-1)`"
+            }
+        ],
+        "example_code": {
+            "language": "python",
+            "code": "def calculate_area(length, width):\n  area = length * width\n  return area\n\nrectangle_area = calculate_area(5, 10)\nprint(f'The area of the rectangle is: {rectangle_area}')"
+        },
+        "explanation": "This Python code defines a function `calculate_area` that takes two parameters (length and width) and returns the calculated area of a rectangle. The main part of the code then calls this function with specific values and prints the result.",
+        "quiz": [
+            {
+                "question": "What is the purpose of a function?",
+                "answer": "To organize and reuse code."
+            },
+            {
+                "question": "What keyword is used to define a function in Python?",
+                "answer": "def"
+            }
+        ]
+    },
+    {
+        "title": "Introduction to Python",
+        "description": "A beginner's guide to the Python programming language.",
+        "modules": [
+            {
+                "title": "What is Python?",
+                "content": [
+                    "Python is a high-level, general-purpose programming language.",
+                    "It's known for its readability and ease of use.",
+                    "Python is used in web development, data science, machine learning, and more."
+                ],
+                "example": {
+                    "code": "print('Hello, world!')",
+                    "output": "Hello, world!"
+                }
+            },
+            {
+                "title": "Basic Syntax and Data Types",
+                "content": [
+                    "Variables: Declaring and using variables.",
+                    "Data Types: Integers, floats, strings, booleans.",
+                    "Operators: Arithmetic, comparison, logical operators."
+                ],
+                "example": {
+                    "code": "name = \"Alice\"\nage = 30\nprint(f\"My name is {name} and I am {age} years old.\")",
+                    "output": "My name is Alice and I am 30 years old."
+                }
+            },
+            {
+                "title": "Control Flow",
+                "content": [
+                    "Conditional Statements: if, elif, else.",
+                    "Loops: for and while loops."
+                ],
+                "example": {
+                    "code": "for i in range(5):\n  print(i)\n\nx = 0\nwhile x < 5:\n  print(x)\n  x += 1",
+                    "output": "0\n1\n2\n3\n4\n0\n1\n2\n3\n4"
+                }
+            },
+            {
+                "title": "Data Structures",
+                "content": [
+                    "Lists: Ordered, mutable collections of items.",
+                    "Tuples: Ordered, immutable collections of items.",
+                    "Dictionaries: Key-value pairs."
+                ],
+                "example": {
+                    "code": "my_list = [1, 2, 3]\nmy_tuple = (4, 5, 6)\nmy_dict = {\"name\": \"Bob\", \"age\": 25}",
+                    "output": null
+                }
+            }
+        ],
+        "quiz": {
+            "questions": [
+                {
+                    "question": "What is Python?",
+                    "options": [
+                        "A compiled language",
+                        "An interpreted language",
+                        "A low-level language",
+                        "A markup language"
+                    ],
+                    "answer": "An interpreted language"
+                }
+            ]
+        }
+    },
+    {
+        "title": "Introduction to Python",
+        "description": "A beginner-friendly introduction to the Python programming language.",
+        "modules": [
+            {
+                "title": "What is Python?",
+                "content": [
+                    "Overview: Python is a high-level, interpreted, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.",
+                    "Key Features: Dynamically typed, garbage collected, supports multiple programming paradigms (object-oriented, imperative, functional).",
+                    "Use Cases: Web development, data science, machine learning, scripting, automation."
+                ]
+            },
+            {
+                "title": "Setting up Python",
+                "content": [
+                    "Installation: Downloading and installing Python from python.org or using package managers like Anaconda.",
+                    "Environment Setup: Configuring your development environment (e.g., using IDEs like VS Code, PyCharm, or Jupyter Notebook).",
+                    "Virtual Environments: Creating isolated environments to manage dependencies for different projects using `venv` or `conda`."
+                ]
+            },
+            {
+                "title": "Basic Syntax",
+                "content": [
+                    "Variables and Data Types: Understanding variables, assignment, and basic data types (integers, floats, strings, booleans).",
+                    "Operators: Arithmetic, comparison, logical, and assignment operators.",
+                    "Control Flow: Conditional statements (if, elif, else) and loops (for, while).",
+                    "Comments: Writing single-line and multi-line comments to document code."
+                ],
+                "example": {
+                    "code": "```python\n# This is a single-line comment\n\n'''\nThis is a\nmulti-line comment\n'''\n\nage = 25  # Integer\npi = 3.14  # Float\nname = \"Alice\"  # String\nis_student = True  # Boolean\n\nif age >= 18:\n    print(\"You are an adult.\")\nelse:\n    print(\"You are a minor.\")\n\nfor i in range(5):\n    print(i)\n```",
+                    "description": "Illustrates variable declaration, data types, conditional statements, and loops."
+                }
+            },
+            {
+                "title": "Functions",
+                "content": [
+                    "Defining Functions: Creating reusable blocks of code with the `def` keyword.",
+                    "Parameters and Arguments: Passing data to functions using parameters and arguments.",
+                    "Return Values: Returning results from functions using the `return` statement.",
+                    "Scope: Understanding variable scope (local and global)."
+                ],
+                "example": {
+                    "code": "```python\ndef greet(name):\n    \"\"\"This function greets the person passed in as a parameter.\"\"\"\n    print(f\"Hello, {name}!\")\n\ngreet(\"Bob\")\n\ndef add(x, y):\n    return x + y\n\nresult = add(5, 3)\nprint(result)\n```",
+                    "description": "Demonstrates defining a function, passing arguments, and returning a value."
+                }
+            },
+            {
+                "title": "Data Structures",
+                "content": [
+                    "Lists: Ordered, mutable collections of items.",
+                    "Tuples: Ordered, immutable collections of items.",
+                    "Dictionaries: Unordered collections of key-value pairs.",
+                    "Sets: Unordered collections of unique items."
+                ],
+                "example": {
+                    "code": "```python\n# Lists\nmy_list = [1, 2, 3, \"apple\", True]\nprint(my_list[0])  # Accessing elements\n\n# Tuples\nmy_tuple = (1, 2, 3)\n\n# Dictionaries\nmy_dict = {\"name\": \"Charlie\", \"age\": 30}\nprint(my_dict[\"name\"])\n\n# Sets\nmy_set = {1, 2, 2, 3}  # Duplicates are automatically removed\nprint(my_set)\n```",
+                    "description": "Illustrates the creation and basic usage of lists, tuples, dictionaries, and sets."
+                }
+            }
+        ],
+        "further_reading": [
+            "Official Python Documentation: https://docs.python.org/3/",
+            "Real Python Tutorials: https://realpython.com/",
+            "Codecademy Python Course: https://www.codecademy.com/learn/learn-python-3"
+        ]
+    },
+    {
+        "title": "Variables and Data Types",
+        "objective": "Understand the concept of variables and various data types in programming.",
+        "sections": [
+            {
+                "title": "What is a Variable?",
+                "content": [
+                    "A variable is a named storage location in the computer's memory used to hold a value.",
+                    "Think of it as a container that can store different types of information.",
+                    "Variables are essential for storing and manipulating data during program execution."
+                ],
+                "example": {
+                    "language": "python",
+                    "code": "name = \"Alice\"\nage = 30\npi = 3.14159"
+                }
+            },
+            {
+                "title": "Data Types",
+                "content": [
+                    "Data types classify the kind of value a variable can hold.",
+                    "Different data types have different properties and operations that can be performed on them.",
+                    "Common data types include:",
+                    " - Integer (int): Whole numbers (e.g., 10, -5, 0)",
+                    " - Float (float): Decimal numbers (e.g., 3.14, -2.5, 0.0)",
+                    " - String (str): Sequences of characters (e.g., \"Hello\", \"World\", \"123\")",
+                    " - Boolean (bool): Represents truth values (True or False)",
+                    " - List (list): Ordered, mutable collections of items (e.g., [1, 2, 3], [\"a\", \"b\", \"c\"] )",
+                    " - Tuple (tuple): Ordered, immutable collections of items (e.g., (1, 2, 3), (\"a\", \"b\", \"c\"))",
+                    " - Dictionary (dict): Unordered collections of key-value pairs (e.g., {\"name\": \"Alice\", \"age\": 30})"
+                ],
+                "examples": [
+                    {
+                        "language": "python",
+                        "code": "age = 25  # Integer\nprice = 99.99  # Float\nname = \"Bob\"  # String\nis_student = True  # Boolean\nmy_list = [1, 2, 3] #List\nmy_tuple = (4, 5, 6) #Tuple\nmy_dict = {\"a\":1, \"b\":2} #Dictionary"
+                    }
+                ]
+            },
+            {
+                "title": "Variable Naming Conventions",
+                "content": [
+                    "Follow these guidelines when naming variables:",
+                    " - Variable names must start with a letter (a-z, A-Z) or an underscore (_).",
+                    " - Variable names can contain letters, numbers, and underscores.",
+                    " - Variable names are case-sensitive (e.g., 'age' and 'Age' are different variables).",
+                    " - Avoid using reserved keywords (e.g., 'if', 'for', 'while', 'class').",
+                    " - Use descriptive and meaningful names to improve code readability.",
+                    " - Use snake_case (lowercase with underscores) for variable names (e.g., 'user_name', 'item_count')."
+                ],
+                "examples": [
+                    {
+                        "language": "python",
+                        "valid_names": [
+                            "user_name",
+                            "_count",
+                            "totalValue",
+                            "x1"
+                        ],
+                        "invalid_names": [
+                            "1st_name",
+                            "my-variable",
+                            "class"
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Data Type Conversion (Casting)",
+                "content": [
+                    "Sometimes, you need to convert a value from one data type to another.",
+                    "This is called type conversion or casting.",
+                    "Common conversion functions include: `int()`, `float()`, `str()`, and `bool()`."
+                ],
+                "examples": [
+                    {
+                        "language": "python",
+                        "code": "num_str = \"10\"\nnum_int = int(num_str)  # Convert string to integer\npi_str = str(3.14) #Convert float to string\nprint(num_int + 5)\nprint(pi_str + \" is pi\")"
+                    }
+                ]
+            }
+        ],
+        "exercises": [
+            {
+                "question": "What data type would you use to store a person's name?",
+                "options": [
+                    "Integer",
+                    "Float",
+                    "String",
+                    "Boolean"
+                ],
+                "answer": "String"
+            },
+            {
+                "question": "Write a Python code snippet that assigns the value 10 to a variable named 'quantity' and prints its data type.",
+                "expected_code": "quantity = 10\nprint(type(quantity))"
+            }
+        ]
+    },
+    {
+        "title": "Conditionals in Programming",
+        "description": "Learn how to make decisions in your code using conditional statements.",
+        "sections": [
+            {
+                "title": "What are Conditionals?",
+                "content": "Conditionals are programming constructs that allow you to execute different blocks of code based on whether a specific condition is true or false. They are fundamental for creating dynamic and responsive programs.",
+                "keywords": [
+                    "conditional statements",
+                    "if statement",
+                    "else statement",
+                    "elif statement",
+                    "boolean logic"
+                ]
+            },
+            {
+                "title": "The `if` Statement",
+                "content": "The `if` statement is the most basic type of conditional. It executes a block of code only if the specified condition is true.",
+                "syntax": "```python\nif condition:\n    # Code to execute if the condition is true\n```",
+                "example": "```python\nx = 10\nif x > 5:\n    print(\"x is greater than 5\")\n```",
+                "explanation": "In this example, the code inside the `if` block will be executed because the condition `x > 5` is true."
+            },
+            {
+                "title": "The `else` Statement",
+                "content": "The `else` statement provides an alternative block of code to execute if the condition in the `if` statement is false.",
+                "syntax": "```python\nif condition:\n    # Code to execute if the condition is true\nelse:\n    # Code to execute if the condition is false\n```",
+                "example": "```python\nx = 3\nif x > 5:\n    print(\"x is greater than 5\")\nelse:\n    print(\"x is not greater than 5\")\n```",
+                "explanation": "In this example, the code inside the `else` block will be executed because the condition `x > 5` is false."
+            },
+            {
+                "title": "The `elif` Statement",
+                "content": "The `elif` (else if) statement allows you to check multiple conditions in sequence. It is useful when you have more than two possible outcomes.",
+                "syntax": "```python\nif condition1:\n    # Code to execute if condition1 is true\nelif condition2:\n    # Code to execute if condition2 is true\nelse:\n    # Code to execute if all conditions are false\n```",
+                "example": "```python\nx = 5\nif x > 5:\n    print(\"x is greater than 5\")\nelif x < 5:\n    print(\"x is less than 5\")\nelse:\n    print(\"x is equal to 5\")\n```",
+                "explanation": "In this example, the code inside the `else` block will be executed because neither x>5 nor x<5 is true, so the program knows x must be 5."
+            },
+            {
+                "title": "Nested Conditionals",
+                "content": "You can nest conditional statements inside other conditional statements to create more complex decision-making structures.",
+                "example": "```python\nx = 10\ny = 5\nif x > 5:\n    if y > 2:\n        print(\"x is greater than 5 and y is greater than 2\")\n    else:\n        print(\"x is greater than 5 but y is not greater than 2\")\nelse:\n    print(\"x is not greater than 5\")\n```",
+                "explanation": "This example demonstrates how you can create conditions within conditions to refine your logic."
+            },
+            {
+                "title": "Boolean Operators",
+                "content": "Boolean operators (`and`, `or`, `not`) can be used to combine multiple conditions in a single `if` statement.",
+                "example": "```python\nx = 7\ny = 3\nif x > 5 and y < 5:\n    print(\"x is greater than 5 and y is less than 5\")\n```",
+                "explanation": "The `and` operator requires both conditions to be true for the entire expression to be true."
+            },
+            {
+                "title": "Practice Exercises",
+                "exercises": [
+                    {
+                        "question": "Write a program that checks if a number is positive, negative, or zero.",
+                        "expected_output": "The program should print 'Positive', 'Negative', or 'Zero' based on the input number."
+                    },
+                    {
+                        "question": "Write a program that determines the largest of three numbers.",
+                        "expected_output": "The program should print the largest number among the three inputs."
+                    },
+                    {
+                        "question": "Write a program to check if a year is a leap year.",
+                        "expected_output": "The program should print 'Leap year' if the input year is a leap year, otherwise 'Not a leap year'."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Introduction to Python",
+        "description": "A beginner-friendly introduction to the Python programming language.",
+        "sections": [
+            {
+                "title": "What is Python?",
+                "content": [
+                    "Python is a high-level, general-purpose programming language.",
+                    "It is known for its readability and clear syntax, making it easier to learn and use.",
+                    "Python is used in various fields, including web development, data science, machine learning, and scripting."
+                ]
+            },
+            {
+                "title": "Setting up Python",
+                "content": [
+                    "Download Python from the official website: [https://www.python.org/downloads/](https://www.python.org/downloads/)",
+                    "Install Python on your operating system.",
+                    "Verify the installation by opening a terminal or command prompt and typing `python --version`."
+                ]
+            },
+            {
+                "title": "Basic Syntax",
+                "content": [
+                    "Python uses indentation to define code blocks.",
+                    "Comments are denoted by `#`.",
+                    "Variables are dynamically typed (you don't need to declare the type).",
+                    "Basic data types include integers, floats, strings, and booleans."
+                ],
+                "example": "```python\n# This is a comment\nx = 10  # Integer\ny = 3.14  # Float\nz = \"Hello\"  # String\nb = True  # Boolean\nprint(x, y, z, b)\n```"
+            },
+            {
+                "title": "Data Structures",
+                "content": [
+                    "Lists: Ordered, mutable collections of items.",
+                    "Tuples: Ordered, immutable collections of items.",
+                    "Dictionaries: Unordered collections of key-value pairs.",
+                    "Sets: Unordered collections of unique items."
+                ],
+                "example": "```python\nmy_list = [1, 2, 3]\nmy_tuple = (4, 5, 6)\nmy_dict = {\"name\": \"Alice\", \"age\": 30}\nmy_set = {7, 8, 9}\nprint(my_list, my_tuple, my_dict, my_set)\n```"
+            },
+            {
+                "title": "Control Flow",
+                "content": [
+                    "Loops are used to repeat a block of code multiple times.",
+                    "The `for` loop is used for iterating over a sequence (e.g., list, tuple, or string).",
+                    "The `while` loop executes a set of statements as long as a condition is true.",
+                    "Conditional statements (`if`, `elif`, `else`) allow you to execute different code blocks based on conditions."
+                ],
+                "for_loop_example": "```python\nfor i in range(5):\n    print(i)\n```",
+                "while_loop_example": "```python\nx = 0\nwhile x < 5:\n    print(x)\n    x += 1\n```",
+                "if_statement_example": "```python\nage = 20\nif age >= 18:\n    print(\"You are an adult.\")\nelse:\n    print(\"You are a minor.\")\n```"
+            },
+            {
+                "title": "Functions",
+                "content": [
+                    "Functions are reusable blocks of code that perform a specific task.",
+                    "They are defined using the `def` keyword.",
+                    "Functions can take arguments and return values."
+                ],
+                "example": "```python\ndef greet(name):\n    return \"Hello, \" + name + \"!\"\n\nmessage = greet(\"Bob\")\nprint(message)\n```"
+            }
+        ],
+        "exercises": [
+            {
+                "title": "Print numbers from 1 to 10",
+                "description": "Write a Python program to print numbers from 1 to 10 using a `for` loop.",
+                "solution": "```python\nfor i in range(1, 11):\n    print(i)\n```"
+            },
+            {
+                "title": "Calculate the sum of a list",
+                "description": "Write a Python function that takes a list of numbers as input and returns the sum of the numbers.",
+                "solution": "```python\ndef sum_list(numbers):\n    total = 0\n    for number in numbers:\n        total += number\n    return total\n\nmy_list = [1, 2, 3, 4, 5]\nprint(sum_list(my_list))\n```"
+            }
+        ]
+    },
+    {
+        "title": "Variables and Data Types",
+        "description": "This lesson introduces the concepts of variables and data types in programming.",
+        "learning_objectives": [
+            "Understand the purpose of variables.",
+            "Learn how to declare and assign values to variables.",
+            "Identify and differentiate between common data types (integer, float, string, boolean).",
+            "Understand the concept of type casting.",
+            "Be able to choose appropriate data types for different situations."
+        ],
+        "sections": [
+            {
+                "title": "What are Variables?",
+                "content": [
+                    "Variables are containers that store data values.",
+                    "Think of them as labeled boxes that can hold different types of information.",
+                    "Each variable has a name (identifier) and a value.",
+                    "The value can change during the execution of the program."
+                ],
+                "example": "```python\nage = 25\nname = \"Alice\"\npi = 3.14159```"
+            },
+            {
+                "title": "Declaring and Assigning Variables",
+                "content": [
+                    "In many languages (like Python), you don't need to explicitly declare the type of a variable.",
+                    "You simply assign a value to it, and the type is inferred.",
+                    "The assignment operator (=) is used to assign a value to a variable.",
+                    "Variable names should be descriptive and follow naming conventions (e.g., snake_case in Python)."
+                ],
+                "example": "```python\nuser_name = \"Bob\"\nscore = 100```"
+            },
+            {
+                "title": "Common Data Types",
+                "data_types": [
+                    {
+                        "name": "Integer (int)",
+                        "description": "Represents whole numbers (e.g., -3, 0, 42).",
+                        "example": "```python\nage = 30\ncount = 1000```"
+                    },
+                    {
+                        "name": "Float (float)",
+                        "description": "Represents numbers with decimal points (e.g., 3.14, -2.5).",
+                        "example": "```python\npi = 3.14159\ntemperature = 25.5```"
+                    },
+                    {
+                        "name": "String (str)",
+                        "description": "Represents sequences of characters (text) enclosed in quotes (single or double).",
+                        "example": "```python\nname = \"Charlie\"\nmessage = 'Hello, World!'```"
+                    },
+                    {
+                        "name": "Boolean (bool)",
+                        "description": "Represents truth values: True or False.",
+                        "example": "```python\nis_valid = True\nis_finished = False```"
+                    }
+                ]
+            },
+            {
+                "title": "Type Casting",
+                "content": [
+                    "Type casting (or type conversion) allows you to change the data type of a variable.",
+                    "Common casting functions include `int()`, `float()`, `str()`, and `bool()`.",
+                    "Be careful when casting, as it can lead to errors if the conversion is not possible.",
+                    "For example, you can't directly cast the string \"abc\" to an integer."
+                ],
+                "example": "```python\nx = \"10\"\ny = int(x)  # Convert string to integer\nz = float(y) # Convert integer to float\nprint(type(x), type(y), type(z))```"
+            },
+            {
+                "title": "Choosing the Right Data Type",
+                "content": [
+                    "Selecting the appropriate data type is crucial for efficient memory usage and accurate calculations.",
+                    "Use integers for counting and whole numbers.",
+                    "Use floats for representing real numbers with decimals.",
+                    "Use strings for storing text and character data.",
+                    "Use booleans for representing true/false conditions."
+                ]
+            }
+        ],
+        "quiz": [
+            {
+                "question": "Which data type is used to store text?",
+                "options": [
+                    "Integer",
+                    "Float",
+                    "String",
+                    "Boolean"
+                ],
+                "answer": "String"
+            },
+            {
+                "question": "What is type casting?",
+                "options": [
+                    "Creating a new variable",
+                    "Changing the data type of a variable",
+                    "Deleting a variable",
+                    "Assigning a value to a variable"
+                ],
+                "answer": "Changing the data type of a variable"
+            }
+        ]
+    },
+    {
+        "title": "Conditionals",
+        "description": "Learn how to make decisions in your code using conditional statements.",
+        "sections": [
+            {
+                "title": "Introduction to Conditionals",
+                "content": [
+                    "Conditionals allow you to execute different code blocks based on whether a certain condition is true or false.",
+                    "They are fundamental for creating dynamic and responsive programs.",
+                    "The most common conditional statement is the `if` statement."
+                ]
+            },
+            {
+                "title": "The `if` Statement",
+                "content": [
+                    "The `if` statement evaluates a condition. If the condition is true, the code block following the `if` statement is executed.",
+                    "Syntax: `if condition:`",
+                    "Example:",
+                    "```python\nx = 10\nif x > 5:\n    print(\"x is greater than 5\")\n```"
+                ]
+            },
+            {
+                "title": "The `else` Statement",
+                "content": [
+                    "The `else` statement provides an alternative code block to execute if the `if` condition is false.",
+                    "It must be used in conjunction with an `if` statement.",
+                    "Syntax: `else:`",
+                    "Example:",
+                    "```python\nx = 3\nif x > 5:\n    print(\"x is greater than 5\")\nelse:\n    print(\"x is not greater than 5\")\n```"
+                ]
+            },
+            {
+                "title": "The `elif` Statement",
+                "content": [
+                    "The `elif` (else if) statement allows you to check multiple conditions sequentially.",
+                    "It provides a way to handle multiple scenarios without nesting multiple `if` statements.",
+                    "Syntax: `elif condition:`",
+                    "Example:",
+                    "```python\nx = 5\nif x > 5:\n    print(\"x is greater than 5\")\nelif x < 5:\n    print(\"x is less than 5\")\nelse:\n    print(\"x is equal to 5\")\n```"
+                ]
+            },
+            {
+                "title": "Nested Conditionals",
+                "content": [
+                    "You can nest `if`, `elif`, and `else` statements within each other to create more complex decision-making structures.",
+                    "Example:",
+                    "```python\nx = 10\ny = 5\nif x > 5:\n    if y > 2:\n        print(\"x is greater than 5 and y is greater than 2\")\n    else:\n        print(\"x is greater than 5 but y is not greater than 2\")\nelse:\n    print(\"x is not greater than 5\")\n```"
+                ]
+            },
+            {
+                "title": "Logical Operators",
+                "content": [
+                    "Logical operators (`and`, `or`, `not`) can be used to combine multiple conditions in a single `if` statement.",
+                    "`and`: Returns `True` if both conditions are true.",
+                    "`or`: Returns `True` if at least one condition is true.",
+                    "`not`: Returns the opposite of the condition's value.",
+                    "Example:",
+                    "```python\nx = 7\ny = 3\nif x > 5 and y < 5:\n    print(\"x is greater than 5 and y is less than 5\")\n```"
+                ]
+            },
+            {
+                "title": "Truthy and Falsy Values",
+                "content": [
+                    "In Python, values other than the boolean `True` and `False` can be evaluated in a conditional context.  These are called \"truthy\" and \"falsy\" values.",
+                    "Falsy values include `False`, `None`, `0`, empty strings (`''`), empty lists (`[]`), empty tuples (`()`), and empty dictionaries (`{}`).",
+                    "All other values are considered truthy.",
+                    "Example:",
+                    "```python\nmy_list = []\nif my_list:\n    print(\"List is not empty\") #This will NOT execute\nelse:\n    print(\"List is empty\")  #This WILL execute\n```"
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Variables and Data Types",
+        "objective": "Understand the concept of variables and different data types in programming.",
+        "sections": [
+            {
+                "title": "What is a Variable?",
+                "content": [
+                    "A variable is a named storage location in a computer's memory used to hold data.",
+                    "Think of it as a container that can store different values.",
+                    "Variables allow you to refer to data using a descriptive name, making your code easier to read and understand."
+                ],
+                "example": {
+                    "language": "python",
+                    "code": "name = \"Alice\"\nage = 30\npi = 3.14159"
+                }
+            },
+            {
+                "title": "Data Types",
+                "content": [
+                    "Data types classify the kind of value a variable can hold. Different data types are treated differently by the programming language.",
+                    "Common data types include:",
+                    "- Integer (int): Whole numbers (e.g., 10, -5, 0)",
+                    "- Float (float): Numbers with decimal points (e.g., 3.14, -2.5)",
+                    "- String (str): Sequences of characters (e.g., \"Hello\", \"World\")",
+                    "- Boolean (bool): Represents truth values, either True or False",
+                    "- List (list): An ordered, mutable (changeable) sequence of items (e.g., [1, 2, 3], [\"apple\", \"banana\"] )",
+                    "- Tuple (tuple): An ordered, immutable (unchangeable) sequence of items (e.g., (1, 2, 3), (\"apple\", \"banana\"))",
+                    "- Dictionary (dict): A collection of key-value pairs (e.g., {\"name\": \"Alice\", \"age\": 30})"
+                ]
+            },
+            {
+                "title": "Integer (int)",
+                "content": [
+                    "Represents whole numbers without any fractional part.",
+                    "Can be positive, negative, or zero."
+                ],
+                "example": {
+                    "language": "python",
+                    "code": "age = 25\nquantity = 100\nnegative_number = -5"
+                }
+            },
+            {
+                "title": "Float (float)",
+                "content": [
+                    "Represents numbers with a decimal point.",
+                    "Used to store values that require more precision than integers."
+                ],
+                "example": {
+                    "language": "python",
+                    "code": "price = 19.99\ntemperature = 25.5\npi = 3.14159"
+                }
+            },
+            {
+                "title": "String (str)",
+                "content": [
+                    "Represents a sequence of characters.",
+                    "Enclosed in single quotes (') or double quotes (\")."
+                ],
+                "example": {
+                    "language": "python",
+                    "code": "name = \"Bob\"\nmessage = 'Hello, World!'\nempty_string = \"\""
+                }
+            },
+            {
+                "title": "Boolean (bool)",
+                "content": [
+                    "Represents truth values: True or False.",
+                    "Used in conditional statements and logical operations."
+                ],
+                "example": {
+                    "language": "python",
+                    "code": "is_valid = True\nis_finished = False"
+                }
+            },
+            {
+                "title": "Lists (list)",
+                "content": [
+                    "Ordered, mutable (changeable) sequences of items.",
+                    "Items can be of different data types.",
+                    "Enclosed in square brackets []."
+                ],
+                "example": {
+                    "language": "python",
+                    "code": "numbers = [1, 2, 3, 4, 5]\nnames = [\"Alice\", \"Bob\", \"Charlie\"]\nmixed_list = [1, \"hello\", True, 3.14]"
+                }
+            },
+            {
+                "title": "Tuples (tuple)",
+                "content": [
+                    "Ordered, immutable (unchangeable) sequences of items.",
+                    "Items can be of different data types.",
+                    "Enclosed in parentheses ()."
+                ],
+                "example": {
+                    "language": "python",
+                    "code": "coordinates = (10, 20)\nrgb_color = (255, 0, 0)\nmixed_tuple = (1, \"hello\", True)"
+                }
+            },
+            {
+                "title": "Dictionaries (dict)",
+                "content": [
+                    "Collections of key-value pairs.",
+                    "Keys must be unique and immutable (e.g., strings, numbers, tuples).",
+                    "Values can be of any data type.",
+                    "Enclosed in curly braces {}."
+                ],
+                "example": {
+                    "language": "python",
+                    "code": "person = {\"name\": \"Alice\", \"age\": 30, \"city\": \"New York\"}\nempty_dict = {}"
+                }
+            },
+            {
+                "title": "Variable Naming Conventions",
+                "content": [
+                    "Choose descriptive and meaningful names for your variables.",
+                    "Follow a consistent naming convention (e.g., snake_case in Python).",
+                    "Variable names should start with a letter or an underscore (_).",
+                    "Variable names cannot contain spaces or special characters (except underscores).",
+                    "Avoid using reserved keywords (e.g., if, for, while) as variable names."
+                ]
+            }
+        ],
+        "exercises": [
+            {
+                "question": "What data type would you use to store a person's name?",
+                "answer": "String (str)"
+            },
+            {
+                "question": "What data type would you use to store the price of an item?",
+                "answer": "Float (float)"
+            },
+            {
+                "question": "Write Python code to create a variable named 'age' and assign it the value 25.",
+                "answer": "age = 25"
+            }
+        ]
+    },
+    {
+        "title": "Loops in Programming",
+        "objective": "Understand and implement different types of loops for repetitive tasks.",
+        "sections": [
+            {
+                "title": "Introduction to Loops",
+                "content": [
+                    "Loops are fundamental programming constructs that allow you to execute a block of code repeatedly.",
+                    "They are essential for automating tasks and processing large amounts of data efficiently.",
+                    "Without loops, you would need to write the same code multiple times, which is inefficient and error-prone."
+                ]
+            },
+            {
+                "title": "The `for` Loop",
+                "description": "The `for` loop iterates over a sequence (e.g., list, tuple, string, range) or other iterable object.",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "The basic syntax of a `for` loop is:"
+                    },
+                    {
+                        "type": "code",
+                        "language": "python",
+                        "content": "for item in sequence:\n    # Code to be executed for each item"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Example using `range()` to iterate a specific number of times:"
+                    },
+                    {
+                        "type": "code",
+                        "language": "python",
+                        "content": "for i in range(5):\n    print(i)"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Explanation: This loop will print the numbers 0, 1, 2, 3, and 4."
+                    },
+                    {
+                        "type": "text",
+                        "content": "Example iterating through a list:"
+                    },
+                    {
+                        "type": "code",
+                        "language": "python",
+                        "content": "my_list = ['apple', 'banana', 'cherry']\nfor fruit in my_list:\n    print(fruit)"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Explanation: This loop will print 'apple', 'banana', and 'cherry'."
+                    }
+                ]
+            },
+            {
+                "title": "The `while` Loop",
+                "description": "The `while` loop executes a block of code as long as a specified condition is true.",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "The basic syntax of a `while` loop is:"
+                    },
+                    {
+                        "type": "code",
+                        "language": "python",
+                        "content": "while condition:\n    # Code to be executed as long as the condition is true"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Example:"
+                    },
+                    {
+                        "type": "code",
+                        "language": "python",
+                        "content": "x = 0\nwhile x < 5:\n    print(x)\n    x += 1"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Explanation: This loop will print the numbers 0, 1, 2, 3, and 4.  It's crucial to ensure the condition eventually becomes false to avoid an infinite loop."
+                    },
+                    {
+                        "type": "text",
+                        "content": "Important: Remember to update the condition variable inside the loop to avoid infinite loops."
+                    }
+                ]
+            },
+            {
+                "title": "Loop Control Statements",
+                "description": "Statements that affect the flow of execution within a loop.",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "The `break` statement terminates the loop prematurely."
+                    },
+                    {
+                        "type": "code",
+                        "language": "python",
+                        "content": "for i in range(10):\n    if i == 5:\n        break\n    print(i)"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Explanation: The loop will stop when i reaches 5."
+                    },
+                    {
+                        "type": "text",
+                        "content": "The `continue` statement skips the current iteration and proceeds to the next."
+                    },
+                    {
+                        "type": "code",
+                        "language": "python",
+                        "content": "for i in range(10):\n    if i % 2 == 0:\n        continue\n    print(i)"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Explanation: This loop will print only the odd numbers from 0 to 9."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Functions",
+        "description": "A lesson on defining and using functions in programming.",
+        "sections": [
+            {
+                "title": "Introduction to Functions",
+                "content": [
+                    "Functions are reusable blocks of code that perform a specific task.",
+                    "They help in organizing code and making it more readable.",
+                    "Functions promote code reusability, avoiding repetition."
+                ]
+            },
+            {
+                "title": "Defining a Function",
+                "content": [
+                    "Functions are defined using the `def` keyword.",
+                    "The syntax for defining a function is: `def function_name(parameters): ...`",
+                    "Parameters are optional inputs that the function can accept.",
+                    "The function body contains the code to be executed."
+                ],
+                "example": {
+                    "language": "python",
+                    "code": "def greet(name):\n    print(f\"Hello, {name}!\")"
+                }
+            },
+            {
+                "title": "Calling a Function",
+                "content": [
+                    "To execute a function, you need to call it by its name followed by parentheses.",
+                    "If the function expects parameters, you need to provide the arguments within the parentheses."
+                ],
+                "example": {
+                    "language": "python",
+                    "code": "greet(\"Alice\")  # Output: Hello, Alice!"
+                }
+            },
+            {
+                "title": "Return Values",
+                "content": [
+                    "Functions can return a value using the `return` statement.",
+                    "If a function doesn't have a `return` statement, it implicitly returns `None`.",
+                    "The `return` statement exits the function immediately."
+                ],
+                "example": {
+                    "language": "python",
+                    "code": "def add(x, y):\n    return x + y\n\nresult = add(5, 3)\nprint(result)  # Output: 8"
+                }
+            },
+            {
+                "title": "Function Arguments",
+                "content": [
+                    "Functions can accept different types of arguments: positional, keyword, and default arguments.",
+                    "Positional arguments are passed in the order they are defined in the function.",
+                    "Keyword arguments are passed with the parameter name: `function_name(parameter_name=value)`.",
+                    "Default arguments have a default value specified in the function definition: `def function_name(parameter=default_value): ...`."
+                ],
+                "example": {
+                    "language": "python",
+                    "code": "def describe_person(name, age, city=\"Unknown\"):\n    print(f\"Name: {name}, Age: {age}, City: {city}\")\n\ndescribe_person(\"Bob\", 30)  # Name: Bob, Age: 30, City: Unknown\ndescribe_person(\"Charlie\", 25, city=\"New York\")  # Name: Charlie, Age: 25, City: New York\ndescribe_person(age=40, name=\"David\") # Name: David, Age: 40, City: Unknown"
+                }
+            },
+            {
+                "title": "Scope",
+                "content": [
+                    "The scope of a variable determines where it can be accessed in the code.",
+                    "Variables defined inside a function have local scope and are only accessible within the function.",
+                    "Variables defined outside any function have global scope and can be accessed from anywhere in the code (but modifying them inside a function requires the `global` keyword)."
+                ],
+                "example": {
+                    "language": "python",
+                    "code": "global_variable = 10\n\ndef my_function():\n    local_variable = 5\n    global global_variable # allows modification of global_variable\n    global_variable = 20\n    print(f\"Inside function: local = {local_variable}, global = {global_variable}\")\n\nmy_function()\nprint(f\"Outside function: global = {global_variable}\")"
+                }
+            }
+        ],
+        "exercises": [
+            {
+                "title": "Exercise 1",
+                "description": "Write a function that takes two numbers as input and returns their sum.",
+                "solution": {
+                    "language": "python",
+                    "code": "def sum_numbers(a, b):\n    return a + b"
+                }
+            },
+            {
+                "title": "Exercise 2",
+                "description": "Write a function that takes a string as input and returns the string reversed.",
+                "solution": {
+                    "language": "python",
+                    "code": "def reverse_string(s):\n    return s[::-1]"
+                }
+            }
+        ]
+    },
+    {
+        "title": "Variables and Data Types",
+        "description": "An introduction to variables and common data types in programming.",
+        "sections": [
+            {
+                "title": "What is a Variable?",
+                "content": [
+                    "A variable is a named storage location in a computer's memory used to hold a value.",
+                    "Think of it as a container for storing information that can be referenced and manipulated.",
+                    "Variables must be declared (created) before they can be used.",
+                    "Variable names are case-sensitive and should be descriptive."
+                ],
+                "example": "age = 25 # Assigning the value 25 to the variable 'age'"
+            },
+            {
+                "title": "Data Types",
+                "content": [
+                    "Data types classify the kind of value a variable can hold.",
+                    "Understanding data types is crucial for performing correct operations and avoiding errors."
+                ],
+                "subsections": [
+                    {
+                        "title": "Integer (int)",
+                        "content": [
+                            "Represents whole numbers, both positive and negative, without decimal points.",
+                            "Examples: -10, 0, 5, 100"
+                        ],
+                        "example": "quantity = 10"
+                    },
+                    {
+                        "title": "Float (float)",
+                        "content": [
+                            "Represents numbers with decimal points.",
+                            "Examples: 3.14, -2.5, 0.0"
+                        ],
+                        "example": "price = 19.99"
+                    },
+                    {
+                        "title": "String (str)",
+                        "content": [
+                            "Represents a sequence of characters (text).",
+                            "Enclosed in single quotes ('') or double quotes (\" \").",
+                            "Examples: \"Hello\", 'World', \"123\""
+                        ],
+                        "example": "name = \"Alice\""
+                    },
+                    {
+                        "title": "Boolean (bool)",
+                        "content": [
+                            "Represents truth values: either `True` or `False`.",
+                            "Used in conditional statements and logical operations."
+                        ],
+                        "example": "is_active = True"
+                    },
+                    {
+                        "title": "List (list)",
+                        "content": [
+                            "An ordered collection of items.",
+                            "Items can be of different data types.",
+                            "Mutable (can be changed after creation).",
+                            "Enclosed in square brackets []."
+                        ],
+                        "example": "numbers = [1, 2, 3, 4, 5]"
+                    }
+                ]
+            },
+            {
+                "title": "Variable Assignment",
+                "content": [
+                    "The assignment operator (=) is used to assign a value to a variable.",
+                    "The variable name is on the left side of the operator, and the value is on the right side.",
+                    "Example: `x = 10` assigns the value 10 to the variable `x`."
+                ],
+                "example": "name = 'Bob'\nage = 30\nprice = 25.50"
+            },
+            {
+                "title": "Type Conversion (Casting)",
+                "content": [
+                    "Converting a value from one data type to another.",
+                    "Common conversion functions: `int()`, `float()`, `str()`, `bool()`"
+                ],
+                "example": "age_str = \"25\"\nage_int = int(age_str)  # Convert string to integer\nheight_float = float(1.75) #Convert to float\nis_adult = bool(1) # Convert to Boolean - 1 represents True, 0 represents False"
+            }
+        ],
+        "exercises": [
+            {
+                "question": "Declare a variable named `pi` and assign it the value 3.14159.",
+                "expected_answer": "pi = 3.14159"
+            },
+            {
+                "question": "Declare a variable named `city` and assign it the string \"New York\".",
+                "expected_answer": "city = \"New York\""
+            },
+            {
+                "question": "Declare a boolean variable named `is_raining` and assign it a value based on whether it is raining or not (True or False).",
+                "expected_answer": "is_raining = True  # or False, depending on the weather"
+            },
+            {
+                "question": "You have a variable `num_str = \"10\"`. Convert it to an integer and store it in a variable called `num_int`.",
+                "expected_answer": "num_str = \"10\"\nnum_int = int(num_str)"
+            }
+        ]
+    },
+    {
+        "title": "Introduction to Python",
+        "description": "A beginner-friendly introduction to the Python programming language.",
+        "modules": [
+            {
+                "module_id": "1",
+                "title": "What is Python?",
+                "content": [
+                    {
+                        "type": "text",
+                        "value": "Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation."
+                    },
+                    {
+                        "type": "text",
+                        "value": "Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly procedural), object-oriented, and functional programming."
+                    },
+                    {
+                        "type": "list",
+                        "items": [
+                            "Easy to learn and use",
+                            "Large standard library",
+                            "Extensive community support",
+                            "Versatile and can be used for web development, data science, machine learning, and more."
+                        ]
+                    }
+                ]
+            },
+            {
+                "module_id": "2",
+                "title": "Setting up your Environment",
+                "content": [
+                    {
+                        "type": "text",
+                        "value": "Before you can start writing Python code, you need to install Python on your computer. You can download the latest version of Python from the official Python website."
+                    },
+                    {
+                        "type": "link",
+                        "url": "https://www.python.org/downloads/",
+                        "text": "Download Python"
+                    },
+                    {
+                        "type": "text",
+                        "value": "After installing Python, you'll need a text editor or an Integrated Development Environment (IDE) to write and run your code. Some popular options include:"
+                    },
+                    {
+                        "type": "list",
+                        "items": [
+                            "Visual Studio Code",
+                            "PyCharm",
+                            "Sublime Text",
+                            "IDLE (Python's built-in IDE)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "module_id": "3",
+                "title": "Basic Syntax and Data Types",
+                "content": [
+                    {
+                        "type": "text",
+                        "value": "Let's start with some basic Python syntax. Python uses indentation to define code blocks, so make sure to indent your code correctly."
+                    },
+                    {
+                        "type": "code",
+                        "language": "python",
+                        "value": "# This is a comment\nprint(\"Hello, World!\")"
+                    },
+                    {
+                        "type": "text",
+                        "value": "Python has several built-in data types, including:"
+                    },
+                    {
+                        "type": "table",
+                        "headers": [
+                            "Data Type",
+                            "Description",
+                            "Example"
+                        ],
+                        "rows": [
+                            [
+                                "Integer",
+                                "Whole numbers",
+                                "10, -5, 0"
+                            ],
+                            [
+                                "Float",
+                                "Decimal numbers",
+                                "3.14, -2.5, 0.0"
+                            ],
+                            [
+                                "String",
+                                "Text",
+                                "\"Hello\", 'World'"
+                            ],
+                            [
+                                "Boolean",
+                                "True or False",
+                                "True, False"
+                            ],
+                            [
+                                "List",
+                                "Ordered collection of items",
+                                "[1, 2, 3], ['a', 'b', 'c']"
+                            ],
+                            [
+                                "Tuple",
+                                "Immutable ordered collection",
+                                "(1, 2, 3), ('a', 'b', 'c')"
+                            ],
+                            [
+                                "Dictionary",
+                                "Key-value pairs",
+                                "{'name': 'John', 'age': 30}"
+                            ]
+                        ]
+                    }
+                ]
+            },
+            {
+                "module_id": "4",
+                "title": "Variables and Operators",
+                "content": [
+                    {
+                        "type": "text",
+                        "value": "Variables are used to store data in Python. You can assign values to variables using the assignment operator (=)."
+                    },
+                    {
+                        "type": "code",
+                        "language": "python",
+                        "value": "x = 10\ny = \"Hello\"\nprint(x)\nprint(y)"
+                    },
+                    {
+                        "type": "text",
+                        "value": "Python supports various operators, including:"
+                    },
+                    {
+                        "type": "list",
+                        "items": [
+                            "Arithmetic operators (+, -, *, /, %, **)",
+                            "Comparison operators (==, !=, >, <, >=, <=)",
+                            "Logical operators (and, or, not)",
+                            "Assignment operators (=, +=, -=, *=, /=)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "module_id": "5",
+                "title": "Control Flow: Conditionals",
+                "content": [
+                    {
+                        "type": "text",
+                        "value": "Conditionals are used to perform different actions based on different conditions."
+                    },
+                    {
+                        "type": "text",
+                        "value": "The `if` statement evaluates a condition and executes the block of code if the condition is true."
+                    },
+                    {
+                        "type": "text",
+                        "value": "`elif` is used to check multiple expressions for true and execute the block for the first true condition."
+                    },
+                    {
+                        "type": "text",
+                        "value": "`else` is executed if none of the previous conditions are true."
+                    },
+                    {
+                        "type": "code",
+                        "language": "python",
+                        "value": "x = 10\nif x > 5:\n    print('x is greater than 5')\nelif x == 5:\n    print('x is 5')\nelse:\n    print('x is less than 5')"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Variables and Data Types",
+        "objective": "Understand the concept of variables and different data types in programming.",
+        "sections": [
+            {
+                "title": "Introduction to Variables",
+                "content": [
+                    "A variable is a named storage location in the computer's memory that can hold a value.",
+                    "Variables are used to store data that can be used and manipulated by a program.",
+                    "Think of a variable as a container labeled with a name, holding some data."
+                ],
+                "example": {
+                    "language": "python",
+                    "code": "my_variable = 10\nname = \"Alice\"\npi = 3.14159"
+                }
+            },
+            {
+                "title": "Naming Conventions",
+                "content": [
+                    "Variable names should be descriptive and meaningful.",
+                    "Use lowercase letters, and separate words with underscores (snake_case) for readability (e.g., user_name, item_count).",
+                    "Variable names should not start with a number or special characters (except underscore).",
+                    "Avoid using reserved keywords (e.g., if, else, for, while) as variable names."
+                ],
+                "example": {
+                    "valid_names": [
+                        "user_name",
+                        "age",
+                        "total_score",
+                        "_private_variable"
+                    ],
+                    "invalid_names": [
+                        "1st_name",
+                        "if",
+                        "my-variable",
+                        "user Name"
+                    ]
+                }
+            },
+            {
+                "title": "Data Types",
+                "content": [
+                    "Data type specifies the kind of value a variable can hold.",
+                    "Common data types include integers, floating-point numbers, strings, and booleans."
+                ],
+                "subsections": [
+                    {
+                        "title": "Integer (int)",
+                        "content": [
+                            "Represents whole numbers without a decimal point (e.g., -10, 0, 42).",
+                            "Used for counting, indexing, and representing discrete quantities."
+                        ],
+                        "example": {
+                            "language": "python",
+                            "code": "age = 30\ncount = 100\nnegative_number = -5"
+                        }
+                    },
+                    {
+                        "title": "Floating-Point Number (float)",
+                        "content": [
+                            "Represents numbers with a decimal point (e.g., 3.14, -2.5, 0.0).",
+                            "Used for representing real numbers, measurements, and calculations involving fractions."
+                        ],
+                        "example": {
+                            "language": "python",
+                            "code": "pi = 3.14159\nprice = 19.99\ntemperature = 25.5"
+                        }
+                    },
+                    {
+                        "title": "String (str)",
+                        "content": [
+                            "Represents a sequence of characters enclosed in single or double quotes (e.g., \"Hello\", 'World').",
+                            "Used for storing text, names, addresses, and other textual data."
+                        ],
+                        "example": {
+                            "language": "python",
+                            "code": "name = \"John Doe\"\nmessage = 'Hello, world!'\naddress = \"123 Main Street\""
+                        }
+                    },
+                    {
+                        "title": "Boolean (bool)",
+                        "content": [
+                            "Represents a truth value: either True or False.",
+                            "Used for representing logical conditions, flags, and controlling program flow."
+                        ],
+                        "example": {
+                            "language": "python",
+                            "code": "is_active = True\nis_valid = False\nresult = (5 > 3)  # result will be True"
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Data Type Conversion (Casting)",
+                "content": [
+                    "Converting a value from one data type to another is called type casting or type conversion.",
+                    "Common conversion functions include int(), float(), str(), and bool()."
+                ],
+                "example": {
+                    "language": "python",
+                    "code": "number_string = \"10\"\nnumber_integer = int(number_string)  # Convert string to integer\n\npi_string = str(3.14)  # Convert float to string\n\nboolean_value = bool(0) # False\nboolean_value2 = bool(10) # True"
+                }
+            },
+            {
+                "title": "Checking Data Types",
+                "content": [
+                    "You can use the `type()` function to check the data type of a variable."
+                ],
+                "example": {
+                    "language": "python",
+                    "code": "x = 5\nprint(type(x)) # Output: <class 'int'>\n\ny = \"Hello\"\nprint(type(y)) # Output: <class 'str'>"
+                }
+            }
+        ],
+        "summary": "Variables are named storage locations that hold data of different types. Understanding data types is crucial for writing correct and efficient programs. You can convert between data types using type casting."
+    },
+    {
+        "lessonTitle": "Conditionals",
+        "lessonDescription": "This lesson introduces the concept of conditionals and how to use them in programming to control the flow of execution based on different conditions.",
+        "sections": [
+            {
+                "sectionTitle": "Introduction to Conditionals",
+                "content": [
+                    "Conditionals are fundamental programming constructs that allow programs to make decisions.",
+                    "They enable the execution of different blocks of code based on whether a certain condition is true or false.",
+                    "Conditionals provide the ability to create dynamic and responsive programs."
+                ]
+            },
+            {
+                "sectionTitle": "The 'if' Statement",
+                "content": [
+                    "The 'if' statement is the most basic form of a conditional.",
+                    "It evaluates a condition, which is an expression that results in either true or false.",
+                    "If the condition is true, the block of code within the 'if' statement is executed.",
+                    "Syntax: `if condition:  \n  # Code to execute if condition is true`"
+                ],
+                "example": {
+                    "code": "age = 20\nif age >= 18:\n  print('You are an adult.')",
+                    "explanation": "This code checks if the variable 'age' is greater than or equal to 18. If it is, it prints 'You are an adult.'"
+                }
+            },
+            {
+                "sectionTitle": "The 'elif' Statement",
+                "content": [
+                    "The 'elif' (else if) statement is used to check multiple conditions in sequence.",
+                    "It provides a way to test additional conditions if the previous 'if' condition is false.",
+                    "Only the first 'elif' block with a true condition will be executed.",
+                    "Syntax: `if condition1:\n  # Code to execute if condition1 is true\nelif condition2:\n  # Code to execute if condition2 is true\n...`"
+                ],
+                "example": {
+                    "code": "score = 75\nif score >= 90:\n  print('A')\nelif score >= 80:\n  print('B')\nelif score >= 70:\n  print('C')\nelse:\n  print('D')",
+                    "explanation": "This code assigns a letter grade based on the value of 'score'. It checks multiple conditions using 'elif' to determine the appropriate grade."
+                }
+            },
+            {
+                "sectionTitle": "The 'else' Statement",
+                "content": [
+                    "The 'else' statement provides a default block of code to be executed if none of the previous 'if' or 'elif' conditions are true.",
+                    "It is always the last part of a conditional structure.",
+                    "Syntax: `if condition:\n  # Code to execute if condition is true\nelse:\n  # Code to execute if condition is false`"
+                ],
+                "example": {
+                    "code": "temperature = 15\nif temperature > 25:\n  print('It is hot.')\nelse:\n  print('It is not hot.')",
+                    "explanation": "This code checks if the 'temperature' is greater than 25. If not, it executes the 'else' block and prints 'It is not hot.'"
+                }
+            },
+            {
+                "sectionTitle": "Nested Conditionals",
+                "content": [
+                    "Conditionals can be nested within each other to create more complex decision-making structures.",
+                    "This allows for checking multiple levels of conditions.",
+                    "Care should be taken to maintain readability and avoid excessive nesting."
+                ],
+                "example": {
+                    "code": "age = 20\nhas_license = True\nif age >= 16:\n  if has_license:\n    print('You are eligible to drive.')\n  else:\n    print('You are old enough to drive, but need a license.')\nelse:\n  print('You are not old enough to drive.')",
+                    "explanation": "This code demonstrates a nested conditional. First, it checks if 'age' is greater than or equal to 16. If so, it further checks if 'has_license' is true before determining if the person is eligible to drive."
+                }
+            }
+        ],
+        "exercises": [
+            {
+                "exerciseTitle": "Even or Odd",
+                "instructions": "Write a program that takes an integer as input and prints whether it is even or odd.",
+                "hints": [
+                    "Use the modulo operator (%) to determine if a number is divisible by 2."
+                ]
+            },
+            {
+                "exerciseTitle": "Positive, Negative, or Zero",
+                "instructions": "Write a program that takes a number as input and prints whether it is positive, negative, or zero.",
+                "hints": [
+                    "Use 'if', 'elif', and 'else' statements to check different conditions."
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Introduction to Python",
+        "content": [
+            "Python is a high-level, interpreted, general-purpose programming language. Its design philosophy emphasizes code readability with its use of significant indentation.",
+            "Key concepts include: Variables, Data Types (integers, floats, strings, booleans, lists, dictionaries, tuples), Control Flow (if/else statements, loops), Functions, and Modules.",
+            "Python is dynamically typed, meaning you don't need to explicitly declare the type of a variable. Python uses an interpreter to execute code line by line, making debugging easier. It has a large standard library that offers tools suited to many tasks.",
+            "Example: Simple 'Hello, World!' program and variable assignment.",
+            "Example:\n\"\"\"\n# Hello, World!\nprint(\"Hello, World!\")\n\n# Variable assignment\nmessage = \"Welcome to Python!\"\nprint(message)\n\n# Basic arithmetic\nx = 5\ny = 10\nsum_result = x + y\nprint(sum_result)\n\"\"\""
+        ]
+    },
+    {
+        "title": "Conditionals",
+        "content": [
+            "Conditionals are programming structures that allow you to execute different code blocks based on whether a specific condition is true or false. They enable your program to make decisions and react dynamically to different inputs or situations.",
+            "Key Concepts: 'if', 'else if' (or 'elif'), 'else', Boolean expressions (True/False), Comparison operators (==, !=, >, <, >=, <=), Logical operators (and, or, not).",
+            "Important Aspects:  The 'if' statement is mandatory to start a conditional block. 'else if' (or 'elif') provides additional conditions to check if the initial 'if' condition is false. The 'else' statement executes only if all preceding 'if' and 'else if' conditions are false.  Conditions are evaluated as Boolean values (True or False).  Proper indentation is crucial for code readability and correct execution.",
+            "Example:",
+            "Example:\n'''\nx = 10\ny = 5\n\nif x > y:\n    print(\"x is greater than y\")\nelif x < y:\n    print(\"x is less than y\")\nelse:\n    print(\"x is equal to y\")\n'''"
+        ]
+    },
+    {
+        "title": "Introduction to Python",
+        "content": [
+            "Python is a high-level, interpreted, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.",
+            "Key concepts related to Introduction to Python: Syntax, Data Types (Integers, Floats, Strings, Booleans), Variables, Operators, Control Flow (if/else, loops), Functions.",
+            "Python uses dynamic typing, meaning you don't need to declare variable types explicitly.  It's also known for its extensive standard library and a vast ecosystem of third-party packages.",
+            "Provide an example where applicable: A simple program that prints 'Hello, world!' and calculates the sum of two numbers.",
+            "Example:\n\"\"\"\n# Print 'Hello, world!'\nprint(\"Hello, world!\")\n\n# Calculate the sum of two numbers\nnum1 = 10\nnum2 = 5\nsum_result = num1 + num2\nprint(\"The sum of\", num1, \"and\", num2, \"is\", sum_result)\n\"\"\""
+        ]
+    },
+    {
+        "title": "Variables and Data Types",
+        "content": [
+            "Variables are named storage locations in a computer's memory that hold data. Data types classify the kind of data a variable can hold (e.g., numbers, text).",
+            "Key Concepts:  * **Variable:** A name that refers to a memory location. * **Data Type:**  Specifies the type of value a variable can store (e.g., integer, string, boolean, float). * **Declaration:** Creating a variable by giving it a name and optionally specifying its data type. * **Assignment:** Storing a value in a variable using the assignment operator (e.g., '=').",
+            "Important Aspects: * Variables must be declared before they are used. * Each variable has a specific data type, influencing the operations you can perform on it.  * Choosing the correct data type is crucial for efficient memory usage and preventing errors.  * Different programming languages have different sets of built-in data types.",
+            "Example in Python:",
+            "Example:\n\"\"\"\n# Assigning an integer to a variable\nage = 30\n\n# Assigning a string to a variable\nname = \"Alice\"\n\n# Assigning a boolean to a variable\nis_student = True\n\n# Assigning a float to a variable\npi = 3.14159\n\nprint(age)\nprint(name)\nprint(is_student)\nprint(pi)\n\"\"\""
+        ]
+    },
+    {
+        "title": "Functions",
+        "content": [
+            "Functions are reusable blocks of code designed to perform a specific task. They help organize code, making it more readable and maintainable.",
+            "Key concepts include: *Definition* (creating the function), *Calling* (executing the function), *Parameters* (inputs to the function), and *Return Values* (outputs from the function).",
+            "Functions improve code reusability by allowing you to execute the same code block multiple times with different inputs. This avoids code duplication and reduces errors. Well-defined functions improve the overall structure and readability of a program.",
+            "Example: A function that adds two numbers:",
+            "Example:\n\"\"\"\ndef add_numbers(x, y):\n  \"\"\"This function adds two numbers and returns the sum.\"\"\"\n  sum_result = x + y\n  return sum_result\n\n# Calling the function:\nresult = add_numbers(5, 3)\nprint(result)  # Output: 8\n\"\"\""
+        ]
+    },
+    {
+        "title": "Introduction to Python",
+        "content": [
+            "Python is a high-level, interpreted, general-purpose programming language. It's known for its readability and versatility.",
+            "Key concepts include: Variables, Data Types (integers, floats, strings, booleans), Operators, Control Flow (if/else, loops), Functions.",
+            "Python uses indentation to define code blocks, unlike many other languages that use braces. This enforces readability.",
+            "Example: Printing 'Hello, World!'",
+            "Example:\n\"\"\"\nprint(\"Hello, World!\")\n\"\"\"",
+            "Variables store data.  Data types determine the kind of data a variable can hold.",
+            "Example:  Storing an integer and a string in variables.",
+            "Example:\n\"\"\"\nage = 30\nname = \"Alice\"\nprint(age)\nprint(name)\n\"\"\"",
+            "Control flow statements like 'if' and 'for' allow you to execute different code blocks based on conditions or iterate over sequences.",
+            "Example: An 'if' statement checking if a number is positive.",
+            "Example:\n\"\"\"\nnumber = 5\nif number > 0:\n    print(\"The number is positive\")\n\"\"\"",
+            "Functions are reusable blocks of code that perform a specific task. They help organize and modularize your programs.",
+            "Example: A function that adds two numbers.",
+            "Example:\n\"\"\"\ndef add(x, y):\n    return x + y\n\nresult = add(5, 3)\nprint(result)\n\"\"\""
+        ]
+    },
+    {
+        "title": "Conditionals",
+        "content": [
+            "Conditionals are fundamental programming constructs that allow you to execute different blocks of code based on whether a condition is true or false.",
+            "Key Concepts: `if`, `else`, `elif` (else if).  These keywords allow you to define conditions and corresponding code blocks.",
+            "The `if` statement evaluates a condition. If the condition is true, the code block associated with the `if` statement is executed. If the condition is false, the code block is skipped.",
+            "The `else` statement provides an alternative code block to execute when the `if` condition is false. It is always associated with a preceding `if` statement.",
+            "The `elif` (else if) statement allows you to check multiple conditions in sequence.  It is placed between an `if` and an `else` statement.  If the `if` condition is false, the `elif` condition is evaluated. If the `elif` condition is true, its associated code block is executed. You can have multiple `elif` statements.",
+            "Example:",
+            "\"\"\"\n# Python example\n\nage = 20\n\nif age >= 18:\n    print(\"You are an adult.\")\nelif age >= 13:\n    print(\"You are a teenager.\")\nelse:\n    print(\"You are a child.\")\n\"\"\""
+        ]
+    },
+    {
+        "title": "Loops",
+        "content": [
+            "Loops are fundamental programming constructs that allow you to execute a block of code repeatedly. This is crucial for automating repetitive tasks and processing collections of data.",
+            "Key concepts related to Loops:\n    - **Iteration:** Each execution of the loop's code block.\n    - **Loop condition:** A boolean expression that determines whether the loop continues to execute.\n    - **Loop body:** The block of code that is executed in each iteration.\n    - **Initialization:** Setting up variables before the loop starts (often the loop counter).\n    - **Increment/Decrement:** Updating variables (usually the loop counter) within the loop to eventually satisfy the loop condition and terminate the loop.",
+            "Important aspects:\n    - **Infinite loops:** Loops that never terminate, usually due to an incorrect loop condition. Avoid these by ensuring the loop condition will eventually become false.\n    - **Loop counters:** Variables used to track the progress of the loop (e.g., the number of iterations).  It is crucial to increment/decrement these counters correctly.\n    - **Nested loops:** Loops within loops, used for more complex iterations like processing 2D arrays or generating combinations.",
+            "Example of a 'for' loop in Python:\n    This loop iterates through a list of numbers and prints each number.",
+            "Example:\n\"\"\"\nnumbers = [1, 2, 3, 4, 5]\n\nfor number in numbers:\n    print(number)\n\"\"\"",
+            "Example of a 'while' loop in Python:\n    This loop counts from 1 to 5.",
+            "Example:\n\"\"\"\ncount = 1\nwhile count <= 5:\n    print(count)\n    count += 1\n\"\"\"",
+            "Choosing between 'for' and 'while' loops: 'for' loops are generally preferred when you know the number of iterations in advance (e.g., iterating through a list). 'while' loops are more appropriate when the number of iterations depends on a condition that may change during execution (e.g., waiting for user input)."
+        ]
+    },
+    {
+        "title": "Introduction to Python",
+        "content": [
+            "Python is a high-level, interpreted, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.",
+            "Key concepts include: Variables, Data Types (integers, floats, strings, booleans), Operators (arithmetic, comparison, logical), Control Flow (if/else statements, loops), Functions, and Modules.",
+            "Important aspects to understand are Python's dynamic typing (you don't need to declare variable types), its extensive standard library, and its wide range of applications from web development to data science.",
+            "Example: Printing a message to the console and performing a simple addition.",
+            "Example:\n\"\"\"\n# Printing a greeting\nprint(\"Hello, world!\")\n\n# Performing addition\na = 5\nb = 3\nsum_result = a + b\nprint(\"The sum of a and b is:\", sum_result)\n\"\"\""
+        ]
+    },
+    {
+        "title": "Introduction to Python",
+        "content": [
+            "Python is a high-level, general-purpose programming language known for its readability and versatility. It's used in web development, data science, machine learning, scripting, and more.",
+            "Key concepts include: Syntax (emphasizing readability), Variables (storing data), Data Types (integers, strings, booleans, etc.), Operators (performing operations), Control Flow (if/else statements, loops), and Functions (reusable code blocks).",
+            "Python uses indentation to define code blocks, unlike many languages that use braces. This enforces code clarity. It's dynamically typed, meaning you don't need to explicitly declare variable types. It also has a vast standard library and a huge community.",
+            "Example demonstrating variable assignment, data types, and a simple 'if' statement:",
+            "Example:\n\"\"\"\n# Assigning a string to a variable\nname = \"Alice\"\n\n# Assigning an integer to a variable\nage = 30\n\n# Assigning a boolean to a variable\nis_student = False\n\n# Conditional statement\nif age >= 18:\n  print(name + \" is an adult.\")\nelse:\n  print(name + \" is not an adult.\")\n\"\"\""
+        ]
+    },
+    {
+        "title": "Variables and Data Types",
+        "content": [
+            "Variables are named storage locations in a computer's memory used to hold data. Data types classify the kind of value a variable can store.",
+            "Key concepts: Variable declaration (naming a variable), assignment (storing a value in a variable), data types (integer, float, string, boolean, etc.).",
+            "Understanding data types is crucial because different data types require different amounts of memory and support different operations. Using the wrong data type can lead to errors or unexpected behavior.",
+            "Example: Imagine you want to store the number of apples in a basket (integer), the price of an apple (float), the name of the apple variety (string), and whether the basket is full or not (boolean). Each would use a different data type.",
+            "Example:\n",
+            "\"\"\"\n# Python Example\nnum_apples = 10  # Integer data type\nprice_per_apple = 0.75 # Float data type\napple_variety = \"Gala\" # String data type\nbasket_full = True  # Boolean data type\n\nprint(f\"We have {num_apples} {apple_variety} apples. Each costs ${price_per_apple:.2f}. Basket full? {basket_full}\")\n\"\"\"\n"
+        ]
+    },
+    {
+        "title": "Conditionals",
+        "content": [
+            "Conditionals are fundamental programming constructs that allow your code to execute different blocks of code based on whether a condition is true or false.",
+            "Key concepts: Boolean expressions (True/False), 'if', 'else', 'elif' (else if) statements.  They control the flow of execution.",
+            "An 'if' statement evaluates a condition. If the condition is True, the code block following the 'if' statement is executed.  If the condition is False, the block is skipped.",
+            "The 'else' statement provides an alternative code block to execute if the 'if' condition is False.  It's optional but useful for handling both True and False cases.",
+            "The 'elif' statement (short for 'else if') allows you to check multiple conditions in a sequence. It's evaluated only if the previous 'if' or 'elif' conditions were False.",
+            "Example: Evaluating if a number is positive, negative, or zero.",
+            "Example:\n\"\"\"\nnumber = -5\n\nif number > 0:\n  print(\"Positive\")\nelif number < 0:\n  print(\"Negative\")\nelse:\n  print(\"Zero\")\n\"\"\"",
+            "Important aspects: Indentation is crucial in languages like Python to define code blocks within 'if', 'else', and 'elif' statements. Proper indentation ensures correct program execution.",
+            "Conditions can be complex, using logical operators like 'and', 'or', and 'not' to combine multiple Boolean expressions.",
+            "Conditionals are used extensively in programming for decision-making, error handling, and controlling program logic."
+        ]
+    },
+    {
+        "title": "Loops",
+        "content": [
+            "Loops are fundamental programming constructs that allow you to repeatedly execute a block of code until a certain condition is met. They are essential for automating repetitive tasks and processing collections of data.",
+            "Key concepts related to Loops:",
+            "  - **Iteration:** A single execution of the loop's body.",
+            "  - **Loop condition:** A Boolean expression that determines whether the loop continues to execute. The loop continues as long as the condition is true.",
+            "  - **Loop body:** The block of code that is executed repeatedly.",
+            "  - **Initialization:** Setting up variables before the loop starts.",
+            "  - **Update:** Modifying variables within the loop to eventually make the loop condition false and terminate the loop.",
+            "Two common types of loops are:",
+            "  - **For loop:** Used when you know the number of iterations in advance or when iterating over a sequence.",
+            "  - **While loop:** Used when you want to repeat a block of code until a certain condition becomes false, and the number of iterations is not known beforehand.",
+            "Important aspects concisely:",
+            "  - Avoid infinite loops by ensuring that the loop condition will eventually become false.",
+            "  - Choose the appropriate loop type based on the specific task and available information.",
+            "  - Ensure proper initialization and update of loop variables to achieve the desired behavior.",
+            "Example: Print numbers from 1 to 5 using a for loop in Python:",
+            "Example:",
+            "\"\"\"\n# Using a for loop\nfor i in range(1, 6):\n    print(i)\n\"\"\"",
+            "Example: Print numbers from 1 to 5 using a while loop in Python:",
+            "Example:",
+            "\"\"\"\n# Using a while loop\ni = 1\nwhile i <= 5:\n    print(i)\n    i += 1\n\"\"\""
+        ]
+    },
+    {
+        "title": "Functions",
+        "content": [
+            "Functions are reusable blocks of code designed to perform a specific task. They promote code organization and reduce redundancy.",
+            "Key concepts related to Functions: Definition (creating the function), Calling (executing the function), Arguments (input values passed to the function), Return Value (output produced by the function).",
+            "Important aspects: Functions enhance code readability, maintainability, and reusability. They allow you to break down complex problems into smaller, manageable parts.",
+            "Example: Defining a function to calculate the area of a rectangle.",
+            "Example:\n\"\"\"\ndef calculate_rectangle_area(length, width):\n  \"\"\"Calculates the area of a rectangle.\"\"\"\n  area = length * width\n  return area\n\n# Calling the function\nrectangle_area = calculate_rectangle_area(5, 10)\nprint(f\"The area of the rectangle is: {rectangle_area}\")\n\"\"\""
+        ]
+    }
+]

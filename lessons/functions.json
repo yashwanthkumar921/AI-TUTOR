@@ -1,0 +1,10 @@
+{
+    "title": "Functions",
+    "content": [
+        "Functions are reusable blocks of code designed to perform a specific task. They promote code organization and reduce redundancy.",
+        "Key concepts related to Functions: Definition (creating the function), Calling (executing the function), Arguments (input values passed to the function), Return Value (output produced by the function).",
+        "Important aspects: Functions enhance code readability, maintainability, and reusability. They allow you to break down complex problems into smaller, manageable parts.",
+        "Example: Defining a function to calculate the area of a rectangle.",
+        "Example:\n\"\"\"\ndef calculate_rectangle_area(length, width):\n  \"\"\"Calculates the area of a rectangle.\"\"\"\n  area = length * width\n  return area\n\n# Calling the function\nrectangle_area = calculate_rectangle_area(5, 10)\nprint(f\"The area of the rectangle is: {rectangle_area}\")\n\"\"\""
+    ]
+}

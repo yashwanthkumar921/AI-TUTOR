@@ -1,0 +1,25 @@
+{
+    "title": "Loops",
+    "content": [
+        "Loops are fundamental programming constructs that allow you to repeatedly execute a block of code until a certain condition is met. They are essential for automating repetitive tasks and processing collections of data.",
+        "Key concepts related to Loops:",
+        "  - **Iteration:** A single execution of the loop's body.",
+        "  - **Loop condition:** A Boolean expression that determines whether the loop continues to execute. The loop continues as long as the condition is true.",
+        "  - **Loop body:** The block of code that is executed repeatedly.",
+        "  - **Initialization:** Setting up variables before the loop starts.",
+        "  - **Update:** Modifying variables within the loop to eventually make the loop condition false and terminate the loop.",
+        "Two common types of loops are:",
+        "  - **For loop:** Used when you know the number of iterations in advance or when iterating over a sequence.",
+        "  - **While loop:** Used when you want to repeat a block of code until a certain condition becomes false, and the number of iterations is not known beforehand.",
+        "Important aspects concisely:",
+        "  - Avoid infinite loops by ensuring that the loop condition will eventually become false.",
+        "  - Choose the appropriate loop type based on the specific task and available information.",
+        "  - Ensure proper initialization and update of loop variables to achieve the desired behavior.",
+        "Example: Print numbers from 1 to 5 using a for loop in Python:",
+        "Example:",
+        "\"\"\"\n# Using a for loop\nfor i in range(1, 6):\n    print(i)\n\"\"\"",
+        "Example: Print numbers from 1 to 5 using a while loop in Python:",
+        "Example:",
+        "\"\"\"\n# Using a while loop\ni = 1\nwhile i <= 5:\n    print(i)\n    i += 1\n\"\"\""
+    ]
+}

@@ -1,0 +1,505 @@
+{
+    "title": "Conditionals Quiz",
+    "questions": [
+        {
+            "question": "What keyword is used to start a conditional statement?",
+            "options": [
+                "start",
+                "if",
+                "condition",
+                "begin"
+            ],
+            "answer": "if"
+        },
+        {
+            "question": "What keyword is used for an alternative condition?",
+            "options": [
+                "or",
+                "then",
+                "else if",
+                "otherwise"
+            ],
+            "answer": "else if"
+        },
+        {
+            "question": "What keyword is used for the final alternative condition?",
+            "options": [
+                "end",
+                "final",
+                "else",
+                "last"
+            ],
+            "answer": "else"
+        },
+        {
+            "question": "Which of the following is a valid conditional operator?",
+            "options": [
+                "is",
+                "=",
+                "==",
+                "<>"
+            ],
+            "answer": "=="
+        },
+        {
+            "question": "What will this code output: if (5 > 3) { print('Hello'); }",
+            "options": [
+                "Hello",
+                "3",
+                "5",
+                "Nothing"
+            ],
+            "answer": "Hello"
+        },
+        {
+            "question": "What will this code output: if (5 < 3) { print('Hello'); } else { print('World'); }",
+            "options": [
+                "Hello",
+                "World",
+                "Nothing",
+                "Error"
+            ],
+            "answer": "World"
+        },
+        {
+            "question": "Which operator means 'not equal to'?",
+            "options": [
+                "=",
+                "==",
+                "!=",
+                "><"
+            ],
+            "answer": "!="
+        },
+        {
+            "question": "Which operator means 'greater than or equal to'?",
+            "options": [
+                "=>",
+                "=<",
+                ">=",
+                "<="
+            ],
+            "answer": ">="
+        },
+        {
+            "question": "Which operator means 'less than or equal to'?",
+            "options": [
+                "=>",
+                "=<",
+                ">=",
+                "<="
+            ],
+            "answer": "<="
+        },
+        {
+            "question": "What is the purpose of the 'if' statement?",
+            "options": [
+                "To repeat code",
+                "To define a function",
+                "To execute code based on a condition",
+                "To declare a variable"
+            ],
+            "answer": "To execute code based on a condition"
+        },
+        {
+            "question": "What is a boolean expression?",
+            "options": [
+                "A type of number",
+                "An expression that evaluates to true or false",
+                "A string of characters",
+                "A mathematical formula"
+            ],
+            "answer": "An expression that evaluates to true or false"
+        },
+        {
+            "question": "Which of the following is a boolean value?",
+            "options": [
+                "10",
+                "Hello",
+                "True",
+                "3.14"
+            ],
+            "answer": "True"
+        },
+        {
+            "question": "What does the '&&' operator represent?",
+            "options": [
+                "OR",
+                "NOT",
+                "AND",
+                "XOR"
+            ],
+            "answer": "AND"
+        },
+        {
+            "question": "What does the '||' operator represent?",
+            "options": [
+                "OR",
+                "NOT",
+                "AND",
+                "XOR"
+            ],
+            "answer": "OR"
+        },
+        {
+            "question": "What does the '!' operator represent?",
+            "options": [
+                "OR",
+                "NOT",
+                "AND",
+                "XOR"
+            ],
+            "answer": "NOT"
+        },
+        {
+            "question": "What is a nested conditional?",
+            "options": [
+                "A condition inside a loop",
+                "A condition inside another condition",
+                "A loop inside a condition",
+                "A function inside a condition"
+            ],
+            "answer": "A condition inside another condition"
+        },
+        {
+            "question": "What will be the output of: if (true && false) { print('A'); } else { print('B'); }",
+            "options": [
+                "A",
+                "B",
+                "true",
+                "false"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What will be the output of: if (true || false) { print('A'); } else { print('B'); }",
+            "options": [
+                "A",
+                "B",
+                "true",
+                "false"
+            ],
+            "answer": "A"
+        },
+        {
+            "question": "What will be the output of: if (!true) { print('A'); } else { print('B'); }",
+            "options": [
+                "A",
+                "B",
+                "true",
+                "false"
+            ],
+            "answer": "B"
+        },
+        {
+            "question": "What happens if the 'if' condition is false and there is no 'else' statement?",
+            "options": [
+                "The program crashes",
+                "The code inside the 'if' block is skipped",
+                "The code inside the 'if' block is executed",
+                "An error message is displayed"
+            ],
+            "answer": "The code inside the 'if' block is skipped"
+        },
+        {
+            "question": "Which of these can be used as a condition in an 'if' statement?",
+            "options": [
+                "A variable",
+                "A boolean expression",
+                "A comparison",
+                "All of the above"
+            ],
+            "answer": "All of the above"
+        },
+        {
+            "question": "What is the purpose of 'else if'?",
+            "options": [
+                "To end the conditional statement",
+                "To provide an alternative condition",
+                "To repeat the 'if' condition",
+                "To define a new variable"
+            ],
+            "answer": "To provide an alternative condition"
+        },
+        {
+            "question": "What will this code output: int x = 5; if (x > 10) { print('Greater'); } else if (x < 10) { print('Smaller'); } else { print('Equal'); }",
+            "options": [
+                "Greater",
+                "Smaller",
+                "Equal",
+                "Nothing"
+            ],
+            "answer": "Smaller"
+        },
+        {
+            "question": "What is the correct syntax for an if-else statement?",
+            "options": [
+                "if (condition) { } else { }",
+                "if condition else",
+                "condition if else",
+                "if: condition else:"
+            ],
+            "answer": "if (condition) { } else { }"
+        },
+        {
+            "question": "Can you have multiple 'else if' statements?",
+            "options": [
+                "Yes",
+                "No",
+                "Only one",
+                "Only two"
+            ],
+            "answer": "Yes"
+        },
+        {
+            "question": "What is a common error with conditionals?",
+            "options": [
+                "Missing parentheses",
+                "Incorrect operator",
+                "Incorrect variable type",
+                "All of the above"
+            ],
+            "answer": "All of the above"
+        },
+        {
+            "question": "Which statement is used to select one of several code blocks based on the value of a variable?",
+            "options": [
+                "if",
+                "else if",
+                "switch",
+                "while"
+            ],
+            "answer": "switch"
+        },
+        {
+            "question": "What is the default case in a switch statement?",
+            "options": [
+                "The first case",
+                "The last case",
+                "The case that is always executed",
+                "A case that is executed if no other case matches"
+            ],
+            "answer": "A case that is executed if no other case matches"
+        },
+        {
+            "question": "What happens if a 'break' statement is missing in a 'switch' statement?",
+            "options": [
+                "The program crashes",
+                "The next case is executed",
+                "The default case is executed",
+                "Nothing happens"
+            ],
+            "answer": "The next case is executed"
+        },
+        {
+            "question": "Which is the correct way to compare two strings for equality in many programming languages?",
+            "options": [
+                "string1 = string2",
+                "string1 == string2",
+                "string1.equals(string2)",
+                "All of the above depend on the language"
+            ],
+            "answer": "All of the above depend on the language"
+        },
+        {
+            "question": "In a complex conditional expression, what determines the order of operations?",
+            "options": [
+                "Left to right",
+                "Right to left",
+                "Operator precedence",
+                "Randomly"
+            ],
+            "answer": "Operator precedence"
+        },
+        {
+            "question": "What is the result of (true && (false || true))?",
+            "options": [
+                "true",
+                "false",
+                "error",
+                "undefined"
+            ],
+            "answer": "true"
+        },
+        {
+            "question": "What is the result of (false || (true && false))?",
+            "options": [
+                "true",
+                "false",
+                "error",
+                "undefined"
+            ],
+            "answer": "false"
+        },
+        {
+            "question": "What is short-circuit evaluation?",
+            "options": [
+                "Evaluating only the first part of a conditional",
+                "Evaluating only the second part of a conditional",
+                "Evaluating only as much of a boolean expression as necessary to determine the result",
+                "Evaluating the entire expression regardless of the initial results"
+            ],
+            "answer": "Evaluating only as much of a boolean expression as necessary to determine the result"
+        },
+        {
+            "question": "What is the advantage of short-circuit evaluation?",
+            "options": [
+                "Faster execution",
+                "Avoiding errors",
+                "Simplified code",
+                "Both Faster execution and Avoiding errors"
+            ],
+            "answer": "Both Faster execution and Avoiding errors"
+        },
+        {
+            "question": "Which of the following is a valid conditional statement?",
+            "options": [
+                "if (x = 5)",
+                "if x == 5 then",
+                "if (x == 5) {}",
+                "if x = 5:"
+            ],
+            "answer": "if (x == 5) {}"
+        },
+        {
+            "question": "What is a ternary operator?",
+            "options": [
+                "An operator with one operand",
+                "An operator with two operands",
+                "An operator with three operands",
+                "An operator with no operands"
+            ],
+            "answer": "An operator with three operands"
+        },
+        {
+            "question": "What is the syntax of a ternary operator?",
+            "options": [
+                "condition ? value1 : value2",
+                "condition : value1 ? value2",
+                "value1 ? condition : value2",
+                "value1 : condition ? value2"
+            ],
+            "answer": "condition ? value1 : value2"
+        },
+        {
+            "question": "What does a ternary operator do?",
+            "options": [
+                "Repeats code",
+                "Assigns a value based on a condition",
+                "Defines a function",
+                "Declares a variable"
+            ],
+            "answer": "Assigns a value based on a condition"
+        },
+        {
+            "question": "Which is more readable: nested if-else or switch?",
+            "options": [
+                "Nested if-else",
+                "Switch",
+                "Depends on the situation",
+                "Neither"
+            ],
+            "answer": "Depends on the situation"
+        },
+        {
+            "question": "What is the purpose of using conditionals in programming?",
+            "options": [
+                "To make the code shorter",
+                "To add complexity",
+                "To control the flow of execution",
+                "To define variables"
+            ],
+            "answer": "To control the flow of execution"
+        },
+        {
+            "question": "How do conditionals contribute to decision-making in programs?",
+            "options": [
+                "By providing random choices",
+                "By executing all possible code paths",
+                "By executing specific code blocks based on conditions",
+                "By preventing code execution"
+            ],
+            "answer": "By executing specific code blocks based on conditions"
+        },
+        {
+            "question": "What is a common use case for conditionals?",
+            "options": [
+                "Validating user input",
+                "Performing calculations",
+                "Displaying output",
+                "All of the above"
+            ],
+            "answer": "All of the above"
+        },
+        {
+            "question": "Why is it important to write clear and concise conditional statements?",
+            "options": [
+                "To make the code run faster",
+                "To make the code harder to understand",
+                "To improve code readability and maintainability",
+                "To reduce the size of the code"
+            ],
+            "answer": "To improve code readability and maintainability"
+        },
+        {
+            "question": "What is the benefit of using 'else if' instead of nested 'if' statements?",
+            "options": [
+                "Faster execution",
+                "Simplified code structure",
+                "Reduced memory usage",
+                "All of the above"
+            ],
+            "answer": "Simplified code structure"
+        },
+        {
+            "question": "What is the importance of using curly braces {} in 'if' and 'else' blocks?",
+            "options": [
+                "They are optional",
+                "They are required only for single-line statements",
+                "They define the scope of the code block",
+                "They have no effect on the code"
+            ],
+            "answer": "They define the scope of the code block"
+        },
+        {
+            "question": "When should you use a 'switch' statement instead of 'if-else if-else'?",
+            "options": [
+                "When there are only two possible conditions",
+                "When the conditions involve complex boolean expressions",
+                "When comparing a single variable against multiple constant values",
+                "Never"
+            ],
+            "answer": "When comparing a single variable against multiple constant values"
+        },
+        {
+            "question": "How can you combine multiple conditions in an 'if' statement?",
+            "options": [
+                "Using commas",
+                "Using semicolons",
+                "Using logical operators (&&, ||, !)",
+                "Using spaces"
+            ],
+            "answer": "Using logical operators (&&, ||, !)"
+        },
+        {
+            "question": "What is the difference between '=' and '=='?",
+            "options": [
+                "They are the same",
+                "'=' is for comparison, '==' is for assignment",
+                "'=' is for assignment, '==' is for comparison",
+                "Neither are valid operators"
+            ],
+            "answer": "'=' is for assignment, '==' is for comparison"
+        },
+        {
+            "question": "Which of the following best describes a conditional statement?",
+            "options": [
+                "A question",
+                "A choice",
+                "A command",
+                "An equation"
+            ],
+            "answer": "A choice"
+        }
+    ]
+}

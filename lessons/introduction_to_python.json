@@ -1,0 +1,10 @@
+{
+    "title": "Introduction to Python",
+    "content": [
+        "Python is a high-level, general-purpose programming language known for its readability and versatility. It's used in web development, data science, machine learning, scripting, and more.",
+        "Key concepts include: Syntax (emphasizing readability), Variables (storing data), Data Types (integers, strings, booleans, etc.), Operators (performing operations), Control Flow (if/else statements, loops), and Functions (reusable code blocks).",
+        "Python uses indentation to define code blocks, unlike many languages that use braces. This enforces code clarity. It's dynamically typed, meaning you don't need to explicitly declare variable types. It also has a vast standard library and a huge community.",
+        "Example demonstrating variable assignment, data types, and a simple 'if' statement:",
+        "Example:\n\"\"\"\n# Assigning a string to a variable\nname = \"Alice\"\n\n# Assigning an integer to a variable\nage = 30\n\n# Assigning a boolean to a variable\nis_student = False\n\n# Conditional statement\nif age >= 18:\n  print(name + \" is an adult.\")\nelse:\n  print(name + \" is not an adult.\")\n\"\"\""
+    ]
+}

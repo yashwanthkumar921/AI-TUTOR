@@ -1,0 +1,10 @@
+{
+    "title": "Introduction to Python",
+    "content": [
+      "Python is a high-level, interpreted programming language known for its simplicity and readability.",
+      "It is widely used in web development, data science, machine learning, and more.",
+      "To write Python code, you simply need a text editor and Python installed on your system.",
+      "Example Python Code:",
+      "```python\nprint('Hello, World!')\n```"
+    ]
+  }

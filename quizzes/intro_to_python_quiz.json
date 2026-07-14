@@ -1,0 +1,20 @@
+{
+    "title": "Introduction to Python",
+    "questions": [
+      {
+        "question": "What is Python best known for?",
+        "options": ["Complex syntax", "Simplicity and readability", "Low-level programming"],
+        "answer": "Simplicity and readability"
+      },
+      {
+        "question": "Which of these is a valid Python code?",
+        "options": ["echo 'Hello, World!'", "System.out.println('Hello, World!')", "print('Hello, World!')"],
+        "answer": "print('Hello, World!')"
+      },
+      {
+        "question": "Which fields use Python extensively?",
+        "options": ["Web Development", "Data Science", "Machine Learning", "All of the above"],
+        "answer": "All of the above"
+      }
+    ]
+  }

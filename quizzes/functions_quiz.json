@@ -1,0 +1,505 @@
+{
+    "title": "Functions Quiz",
+    "questions": [
+        {
+            "question": "What is the purpose of a function?",
+            "options": [
+                "To execute code only once",
+                "To organize code into reusable blocks",
+                "To complicate the program",
+                "To create a new data type"
+            ],
+            "answer": "To organize code into reusable blocks"
+        },
+        {
+            "question": "What is a parameter in a function?",
+            "options": [
+                "A variable that receives data when the function is called",
+                "A global variable",
+                "A variable that is only used inside the main function",
+                "The function's name"
+            ],
+            "answer": "A variable that receives data when the function is called"
+        },
+        {
+            "question": "What is a return value?",
+            "options": [
+                "The value returned by a function after it has finished executing",
+                "The first parameter of the function",
+                "A variable declared inside the function",
+                "The last line of the function"
+            ],
+            "answer": "The value returned by a function after it has finished executing"
+        },
+        {
+            "question": "What is a function call?",
+            "options": [
+                "A declaration of a function",
+                "An invocation of a function to execute its code",
+                "A comment in the code",
+                "A variable assignment"
+            ],
+            "answer": "An invocation of a function to execute its code"
+        },
+        {
+            "question": "What is function overloading?",
+            "options": [
+                "Defining multiple functions with the same name but different parameters",
+                "Giving a function a long name",
+                "Calling a function recursively",
+                "Deleting a function"
+            ],
+            "answer": "Defining multiple functions with the same name but different parameters"
+        },
+        {
+            "question": "What is recursion?",
+            "options": [
+                "A function calling itself",
+                "A function calling another function",
+                "A loop inside a function",
+                "A function with no return value"
+            ],
+            "answer": "A function calling itself"
+        },
+        {
+            "question": "What is a function prototype?",
+            "options": [
+                "A complete function definition",
+                "A declaration of a function's name, parameters, and return type",
+                "The first line of a function",
+                "A comment describing the function"
+            ],
+            "answer": "A declaration of a function's name, parameters, and return type"
+        },
+        {
+            "question": "What is a void function?",
+            "options": [
+                "A function that returns no value",
+                "A function that is empty",
+                "A function that takes no parameters",
+                "A function that calls itself"
+            ],
+            "answer": "A function that returns no value"
+        },
+        {
+            "question": "What is a local variable?",
+            "options": [
+                "A variable declared inside a function",
+                "A variable declared outside a function",
+                "A global variable",
+                "A variable that can be accessed by all functions"
+            ],
+            "answer": "A variable declared inside a function"
+        },
+        {
+            "question": "What is a global variable?",
+            "options": [
+                "A variable declared outside any function",
+                "A variable declared inside a function",
+                "A variable used only in the main function",
+                "A variable that cannot be changed"
+            ],
+            "answer": "A variable declared outside any function"
+        },
+        {
+            "question": "What is the scope of a variable?",
+            "options": [
+                "The region of the program where the variable can be accessed",
+                "The size of the variable in memory",
+                "The data type of the variable",
+                "The value stored in the variable"
+            ],
+            "answer": "The region of the program where the variable can be accessed"
+        },
+        {
+            "question": "What is a function signature?",
+            "options": [
+                "The function's name, parameters, and return type",
+                "The function's body",
+                "The function's comments",
+                "The function's local variables"
+            ],
+            "answer": "The function's name, parameters, and return type"
+        },
+        {
+            "question": "What is the purpose of using functions?",
+            "options": [
+                "Code reusability, modularity, and readability",
+                "To make code longer and more complex",
+                "To slow down the program",
+                "To avoid using variables"
+            ],
+            "answer": "Code reusability, modularity, and readability"
+        },
+        {
+            "question": "What does 'DRY' stand for in programming?",
+            "options": [
+                "Don't Repeat Yourself",
+                "Do Repeat Yourself",
+                "Don't Rush Your Code",
+                "Do Run Your Code"
+            ],
+            "answer": "Don't Repeat Yourself"
+        },
+        {
+            "question": "What is a pure function?",
+            "options": [
+                "A function that always returns the same output for the same input and has no side effects",
+                "A function that returns different outputs for the same input",
+                "A function that modifies global variables",
+                "A function that prints to the console"
+            ],
+            "answer": "A function that always returns the same output for the same input and has no side effects"
+        },
+        {
+            "question": "What is a side effect in a function?",
+            "options": [
+                "Modifying a variable outside the function's scope",
+                "Returning a value",
+                "Taking parameters as input",
+                "Calling another function"
+            ],
+            "answer": "Modifying a variable outside the function's scope"
+        },
+        {
+            "question": "What is the stack in computer programming?",
+            "options": [
+                "A data structure used to manage function calls",
+                "A data structure used to store global variables",
+                "A data structure used for sorting",
+                "A data structure used for searching"
+            ],
+            "answer": "A data structure used to manage function calls"
+        },
+        {
+            "question": "What happens when a stack overflow occurs?",
+            "options": [
+                "The program crashes due to excessive function calls",
+                "The program runs faster",
+                "The program prints an error message",
+                "The program ignores the function call"
+            ],
+            "answer": "The program crashes due to excessive function calls"
+        },
+        {
+            "question": "What is a higher-order function?",
+            "options": [
+                "A function that takes other functions as arguments or returns a function",
+                "A function that calls another function",
+                "A function that is very long",
+                "A function that is very simple"
+            ],
+            "answer": "A function that takes other functions as arguments or returns a function"
+        },
+        {
+            "question": "What is a lambda function?",
+            "options": [
+                "An anonymous function",
+                "A function with a very long name",
+                "A function that calls itself",
+                "A function that returns no value"
+            ],
+            "answer": "An anonymous function"
+        },
+        {
+            "question": "What is a closure?",
+            "options": [
+                "A function that has access to variables in its enclosing scope, even after the outer function has returned",
+                "A function that is closed off from the rest of the program",
+                "A function that has no parameters",
+                "A function that has no return value"
+            ],
+            "answer": "A function that has access to variables in its enclosing scope, even after the outer function has returned"
+        },
+        {
+            "question": "What is currying?",
+            "options": [
+                "Transforming a function that takes multiple arguments into a sequence of functions that each take a single argument",
+                "A function that returns the sum of its arguments",
+                "A function that sorts a list of numbers",
+                "A function that reverses a string"
+            ],
+            "answer": "Transforming a function that takes multiple arguments into a sequence of functions that each take a single argument"
+        },
+        {
+            "question": "What is memoization?",
+            "options": [
+                "Caching the results of function calls to avoid redundant computations",
+                "A function that prints messages to the console",
+                "A function that reads data from a file",
+                "A function that writes data to a file"
+            ],
+            "answer": "Caching the results of function calls to avoid redundant computations"
+        },
+        {
+            "question": "What is a recursive base case?",
+            "options": [
+                "The condition that stops the recursive calls",
+                "The condition that starts the recursive calls",
+                "The function's return value",
+                "The function's parameters"
+            ],
+            "answer": "The condition that stops the recursive calls"
+        },
+        {
+            "question": "What is the advantage of using recursion?",
+            "options": [
+                "Elegance and simplicity for certain problems",
+                "Faster execution speed",
+                "Less memory usage",
+                "Easier debugging"
+            ],
+            "answer": "Elegance and simplicity for certain problems"
+        },
+        {
+            "question": "What is the disadvantage of using recursion?",
+            "options": [
+                "Potential for stack overflow and increased memory usage",
+                "More complex code",
+                "Slower execution speed",
+                "Difficult to read"
+            ],
+            "answer": "Potential for stack overflow and increased memory usage"
+        },
+        {
+            "question": "What is tail recursion?",
+            "options": [
+                "A recursive call that is the last operation in the function",
+                "A recursive call that is the first operation in the function",
+                "A recursive call that happens in the middle of the function",
+                "A function that calls itself twice"
+            ],
+            "answer": "A recursive call that is the last operation in the function"
+        },
+        {
+            "question": "Why is tail recursion optimization important?",
+            "options": [
+                "It avoids stack overflow by reusing the same stack frame",
+                "It makes the code faster",
+                "It makes the code easier to read",
+                "It simplifies the debugging process"
+            ],
+            "answer": "It avoids stack overflow by reusing the same stack frame"
+        },
+        {
+            "question": "What is the purpose of function comments?",
+            "options": [
+                "To explain what the function does, its parameters, and its return value",
+                "To make the code longer",
+                "To confuse other programmers",
+                "To slow down the program"
+            ],
+            "answer": "To explain what the function does, its parameters, and its return value"
+        },
+        {
+            "question": "What is the advantage of using modular programming?",
+            "options": [
+                "Improved code organization, maintainability, and reusability",
+                "Making the code more complex",
+                "Reducing the number of functions",
+                "Avoiding the use of variables"
+            ],
+            "answer": "Improved code organization, maintainability, and reusability"
+        },
+        {
+            "question": "What is function composition?",
+            "options": [
+                "Combining multiple functions to create a new function",
+                "Deleting a function",
+                "Renaming a function",
+                "Copying a function"
+            ],
+            "answer": "Combining multiple functions to create a new function"
+        },
+        {
+            "question": "What is the difference between pass by value and pass by reference?",
+            "options": [
+                "Pass by value creates a copy of the argument, while pass by reference passes the memory address of the argument",
+                "Pass by value passes the memory address, while pass by reference creates a copy",
+                "There is no difference",
+                "Pass by value is faster than pass by reference"
+            ],
+            "answer": "Pass by value creates a copy of the argument, while pass by reference passes the memory address of the argument"
+        },
+        {
+            "question": "Which of the following is a valid function declaration in many programming languages?",
+            "options": [
+                "function myFunction() {}",
+                "MyFunction = function() {}",
+                "def myFunction():",
+                "All of the above (depending on the language)"
+            ],
+            "answer": "All of the above (depending on the language)"
+        },
+        {
+            "question": "What is the correct way to return a value from a function?",
+            "options": [
+                "return value;",
+                "value = return;",
+                "function.return(value);",
+                "return: value;"
+            ],
+            "answer": "return value;"
+        },
+        {
+            "question": "How do you call a function in most programming languages?",
+            "options": [
+                "functionName();",
+                "call functionName;",
+                "execute functionName;",
+                "functionName.call();"
+            ],
+            "answer": "functionName();"
+        },
+        {
+            "question": "What is an argument?",
+            "options": [
+                "The actual value passed to a function when it is called",
+                "The name of the function",
+                "The return type of the function",
+                "A comment within the function"
+            ],
+            "answer": "The actual value passed to a function when it is called"
+        },
+        {
+            "question": "What is the difference between a function declaration and a function expression?",
+            "options": [
+                "A function declaration is hoisted, while a function expression is not",
+                "A function expression is hoisted, while a function declaration is not",
+                "There is no difference",
+                "Function declarations are deprecated"
+            ],
+            "answer": "A function declaration is hoisted, while a function expression is not"
+        },
+        {
+            "question": "Which of the following is a benefit of using functions?",
+            "options": [
+                "Improved code organization",
+                "Code reusability",
+                "Easier debugging",
+                "All of the above"
+            ],
+            "answer": "All of the above"
+        },
+        {
+            "question": "What is a callback function?",
+            "options": [
+                "A function passed as an argument to another function",
+                "A function that calls itself",
+                "A function with no parameters",
+                "A function that returns no value"
+            ],
+            "answer": "A function passed as an argument to another function"
+        },
+        {
+            "question": "What is the purpose of using default parameter values in a function?",
+            "options": [
+                "To provide a default value for a parameter if no value is provided when the function is called",
+                "To force the user to always provide a value for the parameter",
+                "To make the function run faster",
+                "To prevent the user from changing the parameter value"
+            ],
+            "answer": "To provide a default value for a parameter if no value is provided when the function is called"
+        },
+        {
+            "question": "What is the difference between a function and a method?",
+            "options": [
+                "A method is a function associated with an object",
+                "A function is a method associated with an object",
+                "There is no difference",
+                "Methods are deprecated"
+            ],
+            "answer": "A method is a function associated with an object"
+        },
+        {
+            "question": "What is the benefit of using anonymous functions?",
+            "options": [
+                "They can be used inline without needing a name",
+                "They run faster",
+                "They are easier to debug",
+                "They can be called from anywhere in the program"
+            ],
+            "answer": "They can be used inline without needing a name"
+        },
+        {
+            "question": "Which of the following is an example of a higher-order function?",
+            "options": [
+                "A function that sorts an array",
+                "A function that returns the square root of a number",
+                "A function that takes another function as an argument",
+                "A function that prints to the console"
+            ],
+            "answer": "A function that takes another function as an argument"
+        },
+        {
+            "question": "What is the purpose of using recursion in programming?",
+            "options": [
+                "To solve problems by breaking them down into smaller, self-similar subproblems",
+                "To make the code run faster",
+                "To make the code more complex",
+                "To avoid using loops"
+            ],
+            "answer": "To solve problems by breaking them down into smaller, self-similar subproblems"
+        },
+        {
+            "question": "Why is it important to have a base case in a recursive function?",
+            "options": [
+                "To prevent the function from calling itself indefinitely",
+                "To make the function run faster",
+                "To make the function more complex",
+                "To allow the function to call itself indefinitely"
+            ],
+            "answer": "To prevent the function from calling itself indefinitely"
+        },
+        {
+            "question": "What is the purpose of a return statement in a function?",
+            "options": [
+                "To specify the value that the function returns to the caller",
+                "To print a message to the console",
+                "To declare a variable",
+                "To start a loop"
+            ],
+            "answer": "To specify the value that the function returns to the caller"
+        },
+        {
+            "question": "What is the meaning of encapsulation when working with functions?",
+            "options": [
+                "Wrapping data and the methods that operate on that data into a single unit",
+                "Making the code run faster",
+                "Making the code more complex",
+                "Avoiding the use of functions"
+            ],
+            "answer": "Wrapping data and the methods that operate on that data into a single unit"
+        },
+        {
+            "question": "What is the purpose of using named parameters in a function call?",
+            "options": [
+                "To explicitly specify the value for each parameter by name",
+                "To make the function run faster",
+                "To make the code more complex",
+                "To avoid using parameters"
+            ],
+            "answer": "To explicitly specify the value for each parameter by name"
+        },
+        {
+            "question": "What is the potential risk of using global variables excessively?",
+            "options": [
+                "Increased complexity and potential for unintended side effects",
+                "Improved performance",
+                "Simplified debugging",
+                "Reduced memory usage"
+            ],
+            "answer": "Increased complexity and potential for unintended side effects"
+        },
+        {
+            "question": "What is the benefit of using function scope?",
+            "options": [
+                "It helps to prevent naming conflicts and ensures that variables are only accessible where they are needed",
+                "It makes the code run faster",
+                "It makes the code more complex",
+                "It allows variables to be accessed from anywhere in the program"
+            ],
+            "answer": "It helps to prevent naming conflicts and ensures that variables are only accessible where they are needed"
+        }
+    ]
+}

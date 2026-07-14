@@ -1,0 +1,11 @@
+{
+    "title": "Variables and Data Types",
+    "content": [
+        "Variables are named storage locations in a computer's memory used to hold data. Data types classify the kind of value a variable can store.",
+        "Key concepts: Variable declaration (naming a variable), assignment (storing a value in a variable), data types (integer, float, string, boolean, etc.).",
+        "Understanding data types is crucial because different data types require different amounts of memory and support different operations. Using the wrong data type can lead to errors or unexpected behavior.",
+        "Example: Imagine you want to store the number of apples in a basket (integer), the price of an apple (float), the name of the apple variety (string), and whether the basket is full or not (boolean). Each would use a different data type.",
+        "Example:\n",
+        "\"\"\"\n# Python Example\nnum_apples = 10  # Integer data type\nprice_per_apple = 0.75 # Float data type\napple_variety = \"Gala\" # String data type\nbasket_full = True  # Boolean data type\n\nprint(f\"We have {num_apples} {apple_variety} apples. Each costs ${price_per_apple:.2f}. Basket full? {basket_full}\")\n\"\"\"\n"
+    ]
+}

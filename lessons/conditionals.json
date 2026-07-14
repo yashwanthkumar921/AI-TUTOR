@@ -1,0 +1,15 @@
+{
+    "title": "Conditionals",
+    "content": [
+        "Conditionals are fundamental programming constructs that allow your code to execute different blocks of code based on whether a condition is true or false.",
+        "Key concepts: Boolean expressions (True/False), 'if', 'else', 'elif' (else if) statements.  They control the flow of execution.",
+        "An 'if' statement evaluates a condition. If the condition is True, the code block following the 'if' statement is executed.  If the condition is False, the block is skipped.",
+        "The 'else' statement provides an alternative code block to execute if the 'if' condition is False.  It's optional but useful for handling both True and False cases.",
+        "The 'elif' statement (short for 'else if') allows you to check multiple conditions in a sequence. It's evaluated only if the previous 'if' or 'elif' conditions were False.",
+        "Example: Evaluating if a number is positive, negative, or zero.",
+        "Example:\n\"\"\"\nnumber = -5\n\nif number > 0:\n  print(\"Positive\")\nelif number < 0:\n  print(\"Negative\")\nelse:\n  print(\"Zero\")\n\"\"\"",
+        "Important aspects: Indentation is crucial in languages like Python to define code blocks within 'if', 'else', and 'elif' statements. Proper indentation ensures correct program execution.",
+        "Conditions can be complex, using logical operators like 'and', 'or', and 'not' to combine multiple Boolean expressions.",
+        "Conditionals are used extensively in programming for decision-making, error handling, and controlling program logic."
+    ]
+}

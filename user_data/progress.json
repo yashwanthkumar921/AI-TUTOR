@@ -1,0 +1,34 @@
+{
+    "completed_lessons": [
+        "Introduction to Python",
+        "Variables and Data Types",
+        "Conditionals in Python",
+        "Loops in Python",
+        "Functions in Python"
+    ],
+    "quiz_scores": {
+        "quiz:_introduction_to_python": 3,
+        "quiz:_variables_and_data_types": 7
+    },
+    "last_learning_time": "2025-06-29 17:25:30",
+    "streak_count": 1,
+    "learning_goal": {
+        "goal_description": "to get placement",
+        "start_date": "2025-06-25",
+        "end_date": "2025-07-09",
+        "lesson_plan": [
+            "Introduction to Python",
+            "Variables and Data Types",
+            "Conditionals in Python",
+            "Loops in Python",
+            "Functions in Python"
+        ],
+        "completed_lessons": []
+    },
+    "badges": [
+        "Lesson Master"
+    ],
+    "earned_badges": [
+        "Lesson Master"
+    ]
+}

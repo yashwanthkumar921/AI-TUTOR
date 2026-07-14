@@ -1,0 +1,505 @@
+{
+    "title": "Introduction to Python Quiz",
+    "questions": [
+        {
+            "question": "Question 1: What type of programming language is Python?",
+            "options": [
+                "Compiled",
+                "Interpreted",
+                "Machine",
+                "Assembly"
+            ],
+            "answer": "Interpreted"
+        },
+        {
+            "question": "Question 2: Which of the following is NOT a valid data type in Python?",
+            "options": [
+                "int",
+                "float",
+                "string",
+                "character"
+            ],
+            "answer": "character"
+        },
+        {
+            "question": "Question 3: What is the purpose of the 'print()' function in Python?",
+            "options": [
+                "To take input from the user",
+                "To display output to the console",
+                "To perform mathematical calculations",
+                "To define a variable"
+            ],
+            "answer": "To display output to the console"
+        },
+        {
+            "question": "Question 4: Which operator is used for exponentiation in Python?",
+            "options": [
+                "^",
+                "**",
+                "*",
+                "//"
+            ],
+            "answer": "**"
+        },
+        {
+            "question": "Question 5: What is the correct way to write a comment in Python?",
+            "options": [
+                "// This is a comment",
+                "# This is a comment",
+                "/* This is a comment */",
+                "' This is a comment"
+            ],
+            "answer": "# This is a comment"
+        },
+        {
+            "question": "Question 6: What is the purpose of the 'if' statement in Python?",
+            "options": [
+                "To define a loop",
+                "To define a function",
+                "To execute code conditionally",
+                "To declare a variable"
+            ],
+            "answer": "To execute code conditionally"
+        },
+        {
+            "question": "Question 7: What is a list in Python?",
+            "options": [
+                "An ordered, mutable sequence of objects",
+                "An unordered, immutable sequence of objects",
+                "An ordered, immutable sequence of objects",
+                "An unordered, mutable sequence of objects"
+            ],
+            "answer": "An ordered, mutable sequence of objects"
+        },
+        {
+            "question": "Question 8: Which of the following is used to create a function in Python?",
+            "options": [
+                "class",
+                "def",
+                "function",
+                "method"
+            ],
+            "answer": "def"
+        },
+        {
+            "question": "Question 9: What does the 'len()' function do in Python?",
+            "options": [
+                "Calculates the square root of a number",
+                "Returns the length of a string or list",
+                "Prints a message to the console",
+                "Sorts a list"
+            ],
+            "answer": "Returns the length of a string or list"
+        },
+        {
+            "question": "Question 10: What is a dictionary in Python?",
+            "options": [
+                "An ordered sequence of elements",
+                "An unordered collection of key-value pairs",
+                "A data structure that stores only integers",
+                "A collection of functions"
+            ],
+            "answer": "An unordered collection of key-value pairs"
+        },
+        {
+            "question": "Question 11: What is the purpose of the 'for' loop in Python?",
+            "options": [
+                "To define a function",
+                "To repeat a block of code a fixed number of times",
+                "To execute code conditionally",
+                "To define a class"
+            ],
+            "answer": "To repeat a block of code a fixed number of times"
+        },
+        {
+            "question": "Question 12: Which keyword is used to exit a loop prematurely in Python?",
+            "options": [
+                "exit",
+                "stop",
+                "break",
+                "return"
+            ],
+            "answer": "break"
+        },
+        {
+            "question": "Question 13: What is the purpose of the 'while' loop in Python?",
+            "options": [
+                "To define a function",
+                "To repeat a block of code as long as a condition is true",
+                "To execute code conditionally",
+                "To define a class"
+            ],
+            "answer": "To repeat a block of code as long as a condition is true"
+        },
+        {
+            "question": "Question 14: What is the difference between '==' and '=' in Python?",
+            "options": [
+                "'==' is used for assignment, '=' is used for comparison",
+                "'==' is used for comparison, '=' is used for assignment",
+                "They are interchangeable",
+                "They are not valid operators"
+            ],
+            "answer": "'==' is used for comparison, '=' is used for assignment"
+        },
+        {
+            "question": "Question 15: What is a tuple in Python?",
+            "options": [
+                "An ordered, mutable sequence of objects",
+                "An unordered, immutable sequence of objects",
+                "An ordered, immutable sequence of objects",
+                "An unordered, mutable sequence of objects"
+            ],
+            "answer": "An ordered, immutable sequence of objects"
+        },
+        {
+            "question": "Question 16: Which of the following is a valid way to open a file in Python?",
+            "options": [
+                "open('file.txt')",
+                "file.open('file.txt')",
+                "open file.txt",
+                "file = open('file.txt')"
+            ],
+            "answer": "open('file.txt')"
+        },
+        {
+            "question": "Question 17: What is the purpose of the 'try-except' block in Python?",
+            "options": [
+                "To define a function",
+                "To handle errors and exceptions",
+                "To define a loop",
+                "To define a class"
+            ],
+            "answer": "To handle errors and exceptions"
+        },
+        {
+            "question": "Question 18: What does the 'range()' function do in Python?",
+            "options": [
+                "Generates a sequence of numbers",
+                "Calculates the square root of a number",
+                "Prints a message to the console",
+                "Sorts a list"
+            ],
+            "answer": "Generates a sequence of numbers"
+        },
+        {
+            "question": "Question 19: Which method is used to add an element to the end of a list in Python?",
+            "options": [
+                "add()",
+                "insert()",
+                "append()",
+                "extend()"
+            ],
+            "answer": "append()"
+        },
+        {
+            "question": "Question 20: What is string slicing in Python?",
+            "options": [
+                "Dividing a string into words",
+                "Extracting a portion of a string",
+                "Converting a string to uppercase",
+                "Concatenating two strings"
+            ],
+            "answer": "Extracting a portion of a string"
+        },
+        {
+            "question": "Question 21: What is a module in Python?",
+            "options": [
+                "A collection of functions",
+                "A single Python file containing code",
+                "A way to define classes",
+                "A type of loop"
+            ],
+            "answer": "A single Python file containing code"
+        },
+        {
+            "question": "Question 22: How do you import a module in Python?",
+            "options": [
+                "use module_name",
+                "include module_name",
+                "import module_name",
+                "get module_name"
+            ],
+            "answer": "import module_name"
+        },
+        {
+            "question": "Question 23: What is the purpose of the '__init__()' method in a Python class?",
+            "options": [
+                "To destroy an object",
+                "To initialize an object",
+                "To define a function",
+                "To print a message"
+            ],
+            "answer": "To initialize an object"
+        },
+        {
+            "question": "Question 24: What is inheritance in object-oriented programming?",
+            "options": [
+                "Creating multiple objects of the same class",
+                "Defining a function inside a class",
+                "A way for a class to inherit properties from another class",
+                "Deleting an object"
+            ],
+            "answer": "A way for a class to inherit properties from another class"
+        },
+        {
+            "question": "Question 25: What is polymorphism in object-oriented programming?",
+            "options": [
+                "The ability of an object to take on many forms",
+                "Creating multiple objects of the same class",
+                "Defining a function inside a class",
+                "Deleting an object"
+            ],
+            "answer": "The ability of an object to take on many forms"
+        },
+        {
+            "question": "Question 26: What is the purpose of the 'return' statement in a Python function?",
+            "options": [
+                "To print a message to the console",
+                "To exit the program",
+                "To return a value from the function",
+                "To define a variable"
+            ],
+            "answer": "To return a value from the function"
+        },
+        {
+            "question": "Question 27: What is a lambda function in Python?",
+            "options": [
+                "A named function",
+                "An anonymous function",
+                "A recursive function",
+                "A built-in function"
+            ],
+            "answer": "An anonymous function"
+        },
+        {
+            "question": "Question 28: Which of the following is a valid way to concatenate strings in Python?",
+            "options": [
+                "str1 + str2",
+                "str1.concat(str2)",
+                "str1.add(str2)",
+                "str1 && str2"
+            ],
+            "answer": "str1 + str2"
+        },
+        {
+            "question": "Question 29: What does the 'strip()' method do in Python?",
+            "options": [
+                "Removes leading and trailing whitespace from a string",
+                "Converts a string to uppercase",
+                "Converts a string to lowercase",
+                "Splits a string into a list of words"
+            ],
+            "answer": "Removes leading and trailing whitespace from a string"
+        },
+        {
+            "question": "Question 30: What is the difference between a list and a set in Python?",
+            "options": [
+                "Lists are ordered, sets are unordered and contain only unique elements",
+                "Lists are unordered, sets are ordered and contain only unique elements",
+                "Lists and sets are the same",
+                "Lists contain only unique elements, sets can contain duplicates"
+            ],
+            "answer": "Lists are ordered, sets are unordered and contain only unique elements"
+        },
+        {
+            "question": "Question 31: What is the purpose of the 'with' statement when working with files in Python?",
+            "options": [
+                "To automatically close the file after use",
+                "To open the file in read-only mode",
+                "To create a new file",
+                "To delete the file"
+            ],
+            "answer": "To automatically close the file after use"
+        },
+        {
+            "question": "Question 32: What is pickling in Python?",
+            "options": [
+                "A method for sorting data",
+                "A way to convert a Python object into a byte stream",
+                "A type of loop",
+                "A way to handle errors"
+            ],
+            "answer": "A way to convert a Python object into a byte stream"
+        },
+        {
+            "question": "Question 33: What is the purpose of the 'pass' statement in Python?",
+            "options": [
+                "To define a function",
+                "To skip a line of code",
+                "To do nothing",
+                "To exit the program"
+            ],
+            "answer": "To do nothing"
+        },
+        {
+            "question": "Question 34: What is the difference between 'global' and 'local' variables in Python?",
+            "options": [
+                "Global variables are defined inside a function, local variables are defined outside a function",
+                "Global variables are accessible from anywhere in the code, local variables are only accessible within the function where they are defined",
+                "They are interchangeable",
+                "They are not valid terms"
+            ],
+            "answer": "Global variables are accessible from anywhere in the code, local variables are only accessible within the function where they are defined"
+        },
+        {
+            "question": "Question 35: What is a decorator in Python?",
+            "options": [
+                "A way to add extra functionality to a function",
+                "A type of loop",
+                "A way to handle errors",
+                "A way to define a class"
+            ],
+            "answer": "A way to add extra functionality to a function"
+        },
+        {
+            "question": "Question 36: Which data structure is used to implement stacks in Python?",
+            "options": [
+                "Dictionaries",
+                "Lists",
+                "Tuples",
+                "Sets"
+            ],
+            "answer": "Lists"
+        },
+        {
+            "question": "Question 37: Which data structure is used to implement queues in Python?",
+            "options": [
+                "Dictionaries",
+                "Lists",
+                "Tuples",
+                "Sets"
+            ],
+            "answer": "Lists"
+        },
+        {
+            "question": "Question 38: What is the purpose of the 'assert' statement in Python?",
+            "options": [
+                "To define a function",
+                "To check if a condition is true",
+                "To exit the program",
+                "To handle errors"
+            ],
+            "answer": "To check if a condition is true"
+        },
+        {
+            "question": "Question 39: What is the output of the following code: `print(type([1,2,3]))`?",
+            "options": [
+                "<class 'tuple'>",
+                "<class 'set'>",
+                "<class 'list'>",
+                "<class 'dict'>"
+            ],
+            "answer": "<class 'list'>"
+        },
+        {
+            "question": "Question 40: What is the output of the following code: `print(10 // 3)`?",
+            "options": [
+                "3.333",
+                "3",
+                "3.0",
+                "33"
+            ],
+            "answer": "3"
+        },
+        {
+            "question": "Question 41: What is the output of the following code: `print('hello'.upper())`?",
+            "options": [
+                "Hello",
+                "hello",
+                "HELLO",
+                "hELLO"
+            ],
+            "answer": "HELLO"
+        },
+        {
+            "question": "Question 42: What is the output of the following code: `print(2 + 3 * 4)`?",
+            "options": [
+                "20",
+                "14",
+                "10",
+                "12"
+            ],
+            "answer": "14"
+        },
+        {
+            "question": "Question 43: Which of the following is the correct way to check if a key exists in a dictionary called 'my_dict'?",
+            "options": [
+                "my_dict.contains('key')",
+                "'key' in my_dict",
+                "my_dict.has_key('key')",
+                "my_dict.exists('key')"
+            ],
+            "answer": "'key' in my_dict"
+        },
+        {
+            "question": "Question 44: What is the purpose of the 'join()' method in Python strings?",
+            "options": [
+                "To split a string into a list",
+                "To concatenate a list of strings into a single string",
+                "To remove whitespace from a string",
+                "To convert a string to lowercase"
+            ],
+            "answer": "To concatenate a list of strings into a single string"
+        },
+        {
+            "question": "Question 45: What is the difference between shallow copy and deep copy in Python?",
+            "options": [
+                "Shallow copy creates a new object but references the same internal objects, deep copy creates a completely independent copy of the object and its internal objects.",
+                "Shallow copy creates a completely independent copy of the object and its internal objects, deep copy creates a new object but references the same internal objects.",
+                "They are interchangeable",
+                "They perform the same operation"
+            ],
+            "answer": "Shallow copy creates a new object but references the same internal objects, deep copy creates a completely independent copy of the object and its internal objects."
+        },
+        {
+            "question": "Question 46: Which of these libraries is commonly used for numerical computation in Python?",
+            "options": [
+                "Tkinter",
+                "Numpy",
+                "Flask",
+                "Django"
+            ],
+            "answer": "Numpy"
+        },
+        {
+            "question": "Question 47: Which of these libraries is commonly used for data analysis in Python?",
+            "options": [
+                "Tkinter",
+                "Numpy",
+                "Flask",
+                "Pandas"
+            ],
+            "answer": "Pandas"
+        },
+        {
+            "question": "Question 48: Which of the following is NOT a type of loop in Python?",
+            "options": [
+                "for",
+                "while",
+                "do-while",
+                "None of the above"
+            ],
+            "answer": "do-while"
+        },
+        {
+            "question": "Question 49: How do you define a main block of code that only runs when the script is executed directly (not imported)?",
+            "options": [
+                "if __name__ = 'main':",
+                "if __name__ == '__main__':",
+                "if name == main:",
+                "if name is main:"
+            ],
+            "answer": "if __name__ == '__main__':"
+        },
+        {
+            "question": "Question 50: What is the purpose of the `super()` function in Python?",
+            "options": [
+                "To call a function in the superclass from a subclass.",
+                "To create a new object.",
+                "To delete an object.",
+                "To rename a function."
+            ],
+            "answer": "To call a function in the superclass from a subclass."
+        }
+    ]
+}

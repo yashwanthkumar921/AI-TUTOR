@@ -1,0 +1,495 @@
+{
+    "title": "Variables and Data Types Quiz",
+    "questions": [
+        {
+            "question": "What is a variable?",
+            "options": [
+                "A reserved word in programming",
+                "A named storage location in memory",
+                "A mathematical constant",
+                "A type of loop"
+            ],
+            "answer": "A named storage location in memory"
+        },
+        {
+            "question": "Which of the following is NOT a primitive data type?",
+            "options": [
+                "Integer",
+                "String",
+                "Array",
+                "Boolean"
+            ],
+            "answer": "Array"
+        },
+        {
+            "question": "What is the purpose of data types?",
+            "options": [
+                "To define the size of a variable",
+                "To define the type of value a variable can hold",
+                "To improve code readability",
+                "All of the above"
+            ],
+            "answer": "All of the above"
+        },
+        {
+            "question": "What data type is used to store whole numbers?",
+            "options": [
+                "Float",
+                "String",
+                "Integer",
+                "Character"
+            ],
+            "answer": "Integer"
+        },
+        {
+            "question": "What data type is used to store decimal numbers?",
+            "options": [
+                "Integer",
+                "String",
+                "Float",
+                "Boolean"
+            ],
+            "answer": "Float"
+        },
+        {
+            "question": "Which data type represents a truth value (True or False)?",
+            "options": [
+                "Integer",
+                "String",
+                "Float",
+                "Boolean"
+            ],
+            "answer": "Boolean"
+        },
+        {
+            "question": "What data type is used to store text?",
+            "options": [
+                "Integer",
+                "String",
+                "Float",
+                "Boolean"
+            ],
+            "answer": "String"
+        },
+        {
+            "question": "What does 'declaration' of a variable mean?",
+            "options": [
+                "Assigning a value to a variable",
+                "Specifying the name and data type of a variable",
+                "Deleting a variable from memory",
+                "Converting a variable to a different data type"
+            ],
+            "answer": "Specifying the name and data type of a variable"
+        },
+        {
+            "question": "What does 'initialization' of a variable mean?",
+            "options": [
+                "Specifying the name and data type of a variable",
+                "Assigning a value to a variable for the first time",
+                "Deleting a variable from memory",
+                "Converting a variable to a different data type"
+            ],
+            "answer": "Assigning a value to a variable for the first time"
+        },
+        {
+            "question": "What is the difference between a local and a global variable?",
+            "options": [
+                "Local variables can only be used in one function, global variables can be used anywhere in the program.",
+                "Global variables can only be used in one function, local variables can be used anywhere in the program.",
+                "There is no difference.",
+                "Local variables are always integers, global variables are always strings."
+            ],
+            "answer": "Local variables can only be used in one function, global variables can be used anywhere in the program."
+        },
+        {
+            "question": "What is the scope of a variable?",
+            "options": [
+                "The data type of the variable",
+                "The lifetime of the variable",
+                "The region of the program where the variable can be accessed",
+                "The initial value of the variable"
+            ],
+            "answer": "The region of the program where the variable can be accessed"
+        },
+        {
+            "question": "Which of the following is NOT a valid variable name (assuming typical programming rules)?",
+            "options": [
+                "myVariable",
+                "_my_variable",
+                "1stVariable",
+                "my_Variable"
+            ],
+            "answer": "1stVariable"
+        },
+        {
+            "question": "What is type conversion?",
+            "options": [
+                "Converting a variable to a different data type",
+                "Changing the name of a variable",
+                "Assigning a value to a variable",
+                "Declaring a variable"
+            ],
+            "answer": "Converting a variable to a different data type"
+        },
+        {
+            "question": "What is implicit type conversion?",
+            "options": [
+                "Conversion performed by the programmer",
+                "Conversion performed automatically by the compiler/interpreter",
+                "Conversion that is always an error",
+                "Conversion that only works for integers"
+            ],
+            "answer": "Conversion performed automatically by the compiler/interpreter"
+        },
+        {
+            "question": "What is explicit type conversion?",
+            "options": [
+                "Conversion performed by the programmer",
+                "Conversion performed automatically by the compiler/interpreter",
+                "Conversion that is always an error",
+                "Conversion that only works for integers"
+            ],
+            "answer": "Conversion performed by the programmer"
+        },
+        {
+            "question": "What can happen if you try to store a value that is too large for a variable's data type?",
+            "options": [
+                "The program will crash.",
+                "The value will be truncated (data loss).",
+                "The variable will automatically change data type.",
+                "The program will run normally."
+            ],
+            "answer": "The value will be truncated (data loss)."
+        },
+        {
+            "question": "What is a constant?",
+            "options": [
+                "A variable that can be changed during program execution",
+                "A value that cannot be changed during program execution",
+                "A type of loop",
+                "A function that always returns the same value"
+            ],
+            "answer": "A value that cannot be changed during program execution"
+        },
+        {
+            "question": "Which data type is typically used to store a single character?",
+            "options": [
+                "String",
+                "Integer",
+                "Character",
+                "Boolean"
+            ],
+            "answer": "Character"
+        },
+        {
+            "question": "What is an array?",
+            "options": [
+                "A single variable that can hold one value",
+                "A collection of variables of the same data type, stored contiguously in memory",
+                "A function that returns multiple values",
+                "A type of loop"
+            ],
+            "answer": "A collection of variables of the same data type, stored contiguously in memory"
+        },
+        {
+            "question": "What is a pointer?",
+            "options": [
+                "A variable that stores the value of another variable",
+                "A variable that stores the memory address of another variable",
+                "A variable that can only store boolean values",
+                "A type of loop"
+            ],
+            "answer": "A variable that stores the memory address of another variable"
+        },
+        {
+            "question": "Which of the following is a compound data type?",
+            "options": [
+                "Integer",
+                "Float",
+                "String",
+                "Boolean"
+            ],
+            "answer": "String"
+        },
+        {
+            "question": "What is the purpose of assigning a data type to a variable?",
+            "options": [
+                "To allocate the correct amount of memory.",
+                "To tell the compiler how to interpret the data stored in the variable.",
+                "To enforce type safety and prevent errors.",
+                "All of the above."
+            ],
+            "answer": "All of the above."
+        },
+        {
+            "question": "What happens if you try to assign a string value to an integer variable?",
+            "options": [
+                "The program will execute successfully.",
+                "The program will throw a type error.",
+                "The string will be automatically converted to an integer.",
+                "The integer variable will become a string."
+            ],
+            "answer": "The program will throw a type error."
+        },
+        {
+            "question": "What is a strongly typed language?",
+            "options": [
+                "A language where the data type of a variable must be explicitly declared.",
+                "A language that automatically converts data types.",
+                "A language where variables can change their data type during runtime.",
+                "A language that doesn't have any data types."
+            ],
+            "answer": "A language where the data type of a variable must be explicitly declared."
+        },
+        {
+            "question": "What is a weakly typed language?",
+            "options": [
+                "A language where the data type of a variable must be explicitly declared.",
+                "A language that automatically converts data types.",
+                "A language where variables cannot change their data type during runtime.",
+                "A language that doesn't have any data types."
+            ],
+            "answer": "A language that automatically converts data types."
+        },
+        {
+            "question": "Which data type is used to store true or false values in Python?",
+            "options": [
+                "int",
+                "str",
+                "float",
+                "bool"
+            ],
+            "answer": "bool"
+        },
+        {
+            "question": "In JavaScript, which keyword is used to declare a variable?",
+            "options": [
+                "data",
+                "type",
+                "var",
+                "const"
+            ],
+            "answer": "var"
+        },
+        {
+            "question": "In Java, what is the difference between `int` and `Integer`?",
+            "options": [
+                "`int` is a primitive type, `Integer` is a class.",
+                "`Integer` is a primitive type, `int` is a class.",
+                "They are the same.",
+                "Integer is deprecated."
+            ],
+            "answer": "`int` is a primitive type, `Integer` is a class."
+        },
+        {
+            "question": "Which operator is used for assignment in most programming languages?",
+            "options": [
+                "==",
+                "+",
+                "=",
+                "*"
+            ],
+            "answer": "="
+        },
+        {
+            "question": "What does NaN stand for?",
+            "options": [
+                "Not a Number",
+                "No Available Number",
+                "Negative a Number",
+                "Null and None"
+            ],
+            "answer": "Not a Number"
+        },
+        {
+            "question": "What data type would you use to store someone's age?",
+            "options": [
+                "String",
+                "Boolean",
+                "Float",
+                "Integer"
+            ],
+            "answer": "Integer"
+        },
+        {
+            "question": "What data type would you use to store someone's name?",
+            "options": [
+                "Integer",
+                "Boolean",
+                "Float",
+                "String"
+            ],
+            "answer": "String"
+        },
+        {
+            "question": "Which of the following can store multiple data types?",
+            "options": [
+                "Integer",
+                "Float",
+                "Array",
+                "Boolean"
+            ],
+            "answer": "Array"
+        },
+        {
+            "question": "What is a null value?",
+            "options": [
+                "A value of zero",
+                "A value indicating no value is present",
+                "A value that represents infinity",
+                "A value that causes an error"
+            ],
+            "answer": "A value indicating no value is present"
+        },
+        {
+            "question": "What is a volatile variable?",
+            "options": [
+                "A variable that changes its value randomly",
+                "A variable that can be accessed by multiple threads simultaneously",
+                "A variable that is stored on disk",
+                "A variable that is not used in the program"
+            ],
+            "answer": "A variable that can be accessed by multiple threads simultaneously"
+        },
+        {
+            "question": "In C++, what keyword is used to declare a constant variable?",
+            "options": [
+                "variable",
+                "const",
+                "static",
+                "final"
+            ],
+            "answer": "const"
+        },
+        {
+            "question": "What is the range of values for a boolean data type?",
+            "options": [
+                "0 to 100",
+                "0 to 1",
+                "True or False",
+                "-1 to 1"
+            ],
+            "answer": "True or False"
+        },
+        {
+            "question": "Which of the following data types is NOT supported in Python?",
+            "options": [
+                "Integer",
+                "Float",
+                "Double",
+                "String"
+            ],
+            "answer": "Double"
+        },
+        {
+            "question": "What is the size of an integer data type in a 32-bit system?",
+            "options": [
+                "1 byte",
+                "2 bytes",
+                "4 bytes",
+                "8 bytes"
+            ],
+            "answer": "4 bytes"
+        },
+        {
+            "question": "What is the size of a float data type in most systems?",
+            "options": [
+                "2 bytes",
+                "4 bytes",
+                "8 bytes",
+                "16 bytes"
+            ],
+            "answer": "4 bytes"
+        },
+        {
+            "question": "What is the difference between `float` and `double`?",
+            "options": [
+                "`float` is more precise than `double`",
+                "`double` is more precise than `float`",
+                "They are the same.",
+                "They are both used for strings."
+            ],
+            "answer": "`double` is more precise than `float`"
+        },
+        {
+            "question": "What is the purpose of the `static` keyword in Java?",
+            "options": [
+                "To declare a constant variable",
+                "To create an object",
+                "To indicate that a variable or method belongs to the class rather than an instance of the class",
+                "To make a variable private"
+            ],
+            "answer": "To indicate that a variable or method belongs to the class rather than an instance of the class"
+        },
+        {
+            "question": "Which of the following is an example of a literal?",
+            "options": [
+                "myVariable",
+                "x + y",
+                "10",
+                "a = 5"
+            ],
+            "answer": "10"
+        },
+        {
+            "question": "What is the difference between a character and a string?",
+            "options": [
+                "A character is a single letter, a string is a sequence of characters.",
+                "A string is a single letter, a character is a sequence of characters.",
+                "They are the same thing.",
+                "Characters are integers and strings are floats."
+            ],
+            "answer": "A character is a single letter, a string is a sequence of characters."
+        },
+        {
+            "question": "What is the use of `enum` data type?",
+            "options": [
+                "To store only numeric values",
+                "To define a set of named integer constants.",
+                "To define a set of string constants.",
+                "To create a complex data structure"
+            ],
+            "answer": "To define a set of named integer constants."
+        },
+        {
+            "question": "Which of the following is used to define an integer in C#?",
+            "options": [
+                "string",
+                "boolean",
+                "int",
+                "float"
+            ],
+            "answer": "int"
+        },
+        {
+            "question": "Which of the following is a valid String declaration in Java?",
+            "options": [
+                "String str = 'Hello';",
+                "String str = \"Hello\";",
+                "String str = new String('Hello');",
+                "All of the above"
+            ],
+            "answer": "String str = \"Hello\";"
+        },
+        {
+            "question": "Which symbol is commonly used to concatenate strings?",
+            "options": [
+                "-",
+                "*",
+                "+",
+                "/"
+            ],
+            "answer": "+"
+        },
+        {
+            "question": "What is the purpose of casting?",
+            "options": [
+                "To change the case of a string",
+                "To convert one data type to another",
+                "To create a new object",
+                "To initialize a variable"
+            ],
+            "answer": "To convert one data type to another"
+        }
+    ]
+}
